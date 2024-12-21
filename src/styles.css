@@ -16,5 +16,7 @@
         @apply w-full h-full
     }
 
-
+    .center {
+        @apply flex flex-row justify-center items-center
+    }
 }

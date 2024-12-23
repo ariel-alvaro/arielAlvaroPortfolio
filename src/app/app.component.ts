@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FrameComponent } from './core/layaout/components/frame/frame.component';
 import { TitleComponent } from "./core/layaout/components/title/title.component";
-import { NavMenuComponent } from "./features/sidemenu/components/navmenu/navmenu.component";
+import { MenuComponent } from "./features/sidemenu/components/menu/menu.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FrameComponent, TitleComponent, NavMenuComponent],
+  imports: [RouterOutlet, FrameComponent, TitleComponent, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

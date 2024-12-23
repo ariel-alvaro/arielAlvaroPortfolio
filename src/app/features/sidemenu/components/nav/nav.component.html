@@ -1,0 +1,7 @@
+<nav class="flex justify-center gap-2 lg:w-60 lg:h-[3rem] xl:w-72 xl:h-[3rem] absolute bottom-2.5 right-[0.7rem] p-1 bg-[url('/Sprites/texture.png')]">
+        
+    <ng-container *ngFor="let option of options">
+        <app-navoption [imageUrl]="option.imageUrl" (click)="notifyChange(option.id)"/>
+    </ng-container>
+    
+</nav>

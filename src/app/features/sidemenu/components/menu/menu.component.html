@@ -1,0 +1,19 @@
+<main>
+    <section *ngIf=" selection != '' " class=" lg:w-60 lg:h-[20rem] xl:w-72 xl:h-[30rem] bg-[url('/Sprites/texture.png')] absolute bottom-[3.6rem] right-[0.7rem]">
+        
+        
+        <ng-container [ngTemplateOutlet]="selection">
+
+        </ng-container>
+    </section>
+
+    <app-nav [options]="options" (optionSelected)="updateSelection($event)"/>
+</main>
+
+<ng-template #skills>
+    <app-skills/>
+</ng-template>
+
+<ng-template #settings>
+    <app-settings/>
+</ng-template>

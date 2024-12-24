@@ -1,0 +1,28 @@
+.shaped {
+    clip-path: polygon(4% 0, 96% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    border: 2px solid transparent;
+    border-image: url("/Sprites/textureNew.png") space 1;
+    
+}
+
+.texturedBg {
+    background-color: #68371a;
+    background-image: url("/Sprites/rockywall.png");
+    background-color: #512b15; /* Color semitransparente */
+    background-blend-mode: overlay; /* Mezcla el color con la imagen */
+    clip-path: polygon(4% 0, 96% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.shaped::after {
+    content: '';
+
+    opacity: 10%;
+    background-color: #804c2769; /* Rojo semitransparente */
+    background: rgb(138,88,48);
+    background: -moz-linear-gradient(180deg, rgba(138,88,48,1) 0%, rgba(117,68,35,1) 23%, rgba(138,88,48,1) 57%, rgba(138,88,48,1) 65%, rgba(167,92,50,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(138,88,48,1) 0%, rgba(117,68,35,1) 23%, rgba(138,88,48,1) 57%, rgba(138,88,48,1) 65%, rgba(167,92,50,1) 100%);
+    background: linear-gradient(180deg, rgba(138,88,48,1) 0%, rgba(117,68,35,1) 23%, rgba(138,88,48,1) 57%, rgba(138,88,48,1) 65%, rgba(167,92,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a5830",endColorstr="#a75c32",GradientType=1); 
+}

@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class NavComponent {
     
     @Input() options: NavOption[] = []
-
+    @Input() type: string = ""
     @Output() optionSelected = new EventEmitter<number>()
 
 

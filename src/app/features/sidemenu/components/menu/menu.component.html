@@ -1,14 +1,29 @@
-<main>
-    <section *ngIf=" selection != '' " class=" lg:w-60 lg:h-[20rem] xl:w-72 xl:h-[30rem] bg-[url('/Sprites/texture.png')] absolute bottom-[3.6rem] right-[0.7rem]">
+<main class="fullscreen ">
+    
+    <app-menu-header [option]="selection"/>
+
+    <!-- Nav bar with a list of Options as input and  output that calls updateSelection-->
+    <app-nav [type]="'upper'"  [options]="options" (optionSelected)="updateSelection($event)"/>
+
+    <section class=" w-full h-[70%] bg-[url('/Sprites/textureNew.png')] bg-cover relative">
         
+        <div class="glassy absolute w-full h-0.5 bg-red-500"></div>
+        <div class="glassy absolute w-full h-0.5 bottom-0 bg-red-500"></div>
+        <div class="glassy absolute h-full w-0.5 left-0 bg-red-500"></div>
+        <div class="glassy absolute  h-full w-0.5 right-0 bg-red-500"></div>
         
-        <ng-container [ngTemplateOutlet]="selection">
+        <ng-container [ngTemplateOutlet]="selectedTemplate">
 
         </ng-container>
     </section>
 
-    <app-nav [options]="options" (optionSelected)="updateSelection($event)"/>
+    <!-- <app-nav [type]="'bottom'" [options]="options" (optionSelected)="updateSelection($event)"/> -->
+    
+    
+
 </main>
+
+
 
 <ng-template #skills>
     <app-skills/>

@@ -1,9 +1,9 @@
-<main class="fullscreen ">
+<main class="fullscreen">
     
     <app-menu-header [option]="selection"/>
 
     <!-- Nav bar with a list of Options as input and  output that calls updateSelection-->
-    <app-nav [type]="'upper'"  [options]="options" (optionSelected)="updateSelection($event)"/>
+    <app-nav [type]="navEnum.upper"  [options]="upperOptions" (optionSelected)="updateSelection($event)"/>
 
     <section class=" w-full h-[70%] bg-[url('/Sprites/textureNew.png')] bg-cover relative">
         
@@ -12,12 +12,10 @@
         <div class="glassy absolute h-full w-0.5 left-0 bg-red-500"></div>
         <div class="glassy absolute  h-full w-0.5 right-0 bg-red-500"></div>
         
-        <ng-container [ngTemplateOutlet]="selectedTemplate">
-
-        </ng-container>
+        <ng-container [ngTemplateOutlet]="selectedTemplate"></ng-container>
     </section>
 
-    <!-- <app-nav [type]="'bottom'" [options]="options" (optionSelected)="updateSelection($event)"/> -->
+    <app-nav [type]="navEnum.bottom" [options]="bottomOptions" (optionSelected)="updateSelection($event)"/>
     
     
 
@@ -28,7 +26,9 @@
 <ng-template #skills>
     <app-skills/>
 </ng-template>
-
+<ng-template #backpack>
+    <app-backpack/>
+</ng-template>
 <ng-template #settings>
     <app-settings/>
 </ng-template>

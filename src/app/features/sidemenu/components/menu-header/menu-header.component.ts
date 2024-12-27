@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import NavOption from '@features/sidemenu/interfaces/sidemenu.interfaces';
+import { NavOption } from '@features/sidemenu/interfaces/sidemenu.interfaces';
 
 @Component({
   selector: 'app-menu-header',

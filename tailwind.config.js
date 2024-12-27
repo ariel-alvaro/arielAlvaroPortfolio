@@ -11,7 +11,7 @@ module.exports = {
         'tablet': '1024px',
         'laptop': '1280px',
         'desktop': '1366px',
-        'fullhd': '1920px'
+        'fullhd': '1600px'
     }
   },
   plugins: [],

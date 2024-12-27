@@ -1,13 +1,30 @@
 
 
 
-<nav class=" bg-red-700 h-[7%] bg-[url('/Sprites/textureNew.png')]">
-    <section class="h-full w-[40%] flex gap-0.5">
+
+
+<nav *ngIf="type == navEnum.upper" class=" bg-red-700 h-[7%] bg-[url('/Sprites/textureNew.png')]">
+    <section class="h-full w-[50%] flex gap-0.5">
         <ng-container *ngFor="let option of options">
-            <app-navoption class="grow" [imageUrl]="option.imageUrl" (click)="notifyChange(option.id)"/>
+
+            <div [style.background]="selected == option.id ? '#b2b2cd26': '#b2b2cd14'" class="shaped center h-full w-full ml-1 bg-orange-300 glassy hover:cursor-pointer" (click)="changeSelection(option.id)">
+                <img class="h-[70%]" [src]="option.imageUrl"/>
+            </div>
+
+
         </ng-container>
     </section>    
-
-    
 </nav>
 
+<nav *ngIf="type == navEnum.bottom" class=" bg-red-700 h-[13%] bg-[url('/Sprites/textureNew.png')]">
+    <section class="fullscreen flex gap-0.5 p-1">
+        <ng-container *ngFor="let option of options">
+
+            <div class="center h-full w-full ml-1 bg-red-500 glassy hover:cursor-pointer">
+                <img class="h-[80%]" [src]="option.imageUrl"/>
+            </div>
+
+
+        </ng-container>
+    </section>    
+</nav>

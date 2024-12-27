@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavoptionComponent } from './navoption.component';
+import { BackpackComponent } from './backpack.component';
 
-describe('NavoptionComponent', () => {
-  let component: NavoptionComponent;
-  let fixture: ComponentFixture<NavoptionComponent>;
+describe('BackpackComponent', () => {
+  let component: BackpackComponent;
+  let fixture: ComponentFixture<BackpackComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavoptionComponent]
+      imports: [BackpackComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavoptionComponent);
+    fixture = TestBed.createComponent(BackpackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

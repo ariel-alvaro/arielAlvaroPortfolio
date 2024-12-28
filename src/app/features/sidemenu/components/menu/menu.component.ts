@@ -14,31 +14,34 @@ import { NavComponent } from "../nav/nav.component";
 import { MenuHeaderComponent } from "../menu-header/menu-header.component";
 import { NavType } from '@features/sidemenu/enums/optionType.enum';
 import { BackpackComponent } from "../backpack/backpack.component";
+import { SummaryComponent } from "../summary/summary.component";
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, SkillsComponent, SettingsComponent, NavComponent, MenuHeaderComponent, BackpackComponent],
+  imports: [CommonModule, SkillsComponent, SettingsComponent, NavComponent, MenuHeaderComponent, BackpackComponent, SummaryComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
     @ViewChild('skills') skills: TemplateRef<any>
-    @ViewChild('backpack') backpack!: TemplateRef<any>
-    @ViewChild('settings') settings!: TemplateRef<any>
+    @ViewChild('backpack') backpack: TemplateRef<any>
+    @ViewChild('summary') summary: TemplateRef<any>
+    @ViewChild('settings') settings: TemplateRef<any>
 
     readonly navEnum = NavType;
 
     upperOptions: NavOption[] = [
         {id: 0, description: "skills", imageUrl:"Sprites/Skills.png", headerImageUrl: ""},
         {id: 1, description: "backpack", imageUrl:"Sprites/backpack.png", headerImageUrl: ""},
-        {id: 2, description: "summary", imageUrl:"Sprites/Skills.png", headerImageUrl: ""},
+        {id: 2, description: "summary", imageUrl:"Sprites/summary.png", headerImageUrl: ""},
     ]
     
     bottomOptions: NavOption[] = [
-        {id: 3, description: "", imageUrl:"Sprites/Skills.png", headerImageUrl: ""},
-        {id: 4, description: "about", imageUrl:"Sprites/about.png", headerImageUrl: ""},
-        {id: 5, description: "settings", imageUrl:"Sprites/settings.png", headerImageUrl: ""},
+        {id: 3, description: "about", imageUrl:"Sprites/about.png", headerImageUrl: "", color:'#204439'},
+        {id: 4, description: "social", imageUrl:"Sprites/social.png", headerImageUrl: "", color:"#672330"},
+        {id: 5, description: "music", imageUrl:"Sprites/music.png", headerImageUrl: "", color:"#7b3a1c"},
+        {id: 6, description: "settings", imageUrl:"Sprites/settings.png", headerImageUrl: ""},
     ]
 
     selection: NavOption = {id: 0, description: "skills", imageUrl:"Sprites/Skills.png", headerImageUrl: ""}
@@ -50,12 +53,12 @@ export class MenuComponent {
     updateSelection(id: number) {
         console.log(id)
         this.selectedTemplate = this.sections[id]
-        console.log(this.selection)
+        console.log(this.selectedTemplate)
     }
     
     ngAfterViewInit() {
-        this.sections = [this.skills, this.backpack, this.settings];
-        this.selectedTemplate = this.backpack //borrar
+        this.sections = [this.skills, this.backpack, this.summary, this.settings];
+        this.selectedTemplate = this.summary //borrar
     }
 
 }

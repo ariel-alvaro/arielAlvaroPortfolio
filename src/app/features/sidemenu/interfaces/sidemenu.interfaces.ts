@@ -3,6 +3,7 @@ export interface NavOption {
     description: string
     imageUrl: string
     headerImageUrl: string
+    color?: string
 }
 
 export interface Skill {

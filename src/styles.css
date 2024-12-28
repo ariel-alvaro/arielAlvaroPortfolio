@@ -30,3 +30,8 @@
         @apply flex flex-row justify-center items-center
     }
 }
+
+@font-face {
+    font-family: 'rs';
+    src: url("/fonts/runescape.ttf");
+}

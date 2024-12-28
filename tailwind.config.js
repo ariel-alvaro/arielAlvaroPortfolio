@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+            'rs': ['rs']
+        }
+    },
     screens: {
         'smallPhone': '320px',
         'phone': '568px',

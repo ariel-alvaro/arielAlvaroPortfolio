@@ -3,13 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .sideText {
-        @apply  font-rs text-[4px] phone:text-[8px]  tablet:text-[10px] laptop:text-[13px] fullhd:text-[18px] text-center leading-[5px] tablet:leading-[8px] laptop:leading-4 textShadow
-    }
-    
-}
-
 
 .corner {
     border-radius: 0px;
@@ -42,6 +35,3 @@
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
 }
 
-.textShadow {
-    text-shadow: 0px 1.2px #100d0d;
-}

@@ -15,11 +15,14 @@ import { MenuHeaderComponent } from "../menu-header/menu-header.component";
 import { NavType } from '@features/sidemenu/enums/optionType.enum';
 import { BackpackComponent } from "../backpack/backpack.component";
 import { SummaryComponent } from "../summary/summary.component";
+import { AboutComponent } from "../about/about.component";
+import { AccountComponent } from "../account/account.component";
+import { MusicComponent } from "../music/music.component";
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, SkillsComponent, SettingsComponent, NavComponent, MenuHeaderComponent, BackpackComponent, SummaryComponent],
+  imports: [CommonModule, SkillsComponent, SettingsComponent, NavComponent, MenuHeaderComponent, BackpackComponent, SummaryComponent, AboutComponent, AccountComponent, MusicComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
@@ -27,6 +30,9 @@ export class MenuComponent {
     @ViewChild('skills') skills: TemplateRef<any>
     @ViewChild('backpack') backpack: TemplateRef<any>
     @ViewChild('summary') summary: TemplateRef<any>
+    @ViewChild('about') about: TemplateRef<any>
+    @ViewChild('account') account: TemplateRef<any>
+    @ViewChild('music') music: TemplateRef<any>
     @ViewChild('settings') settings: TemplateRef<any>
 
     readonly navEnum = NavType;
@@ -57,8 +63,9 @@ export class MenuComponent {
     }
     
     ngAfterViewInit() {
-        this.sections = [this.skills, this.backpack, this.summary, this.settings];
-        this.selectedTemplate = this.summary //borrar
+        this.sections = [this.skills, this.backpack, this.summary, this.about, this.account, this.music, this.settings];
+        this.selectedTemplate = this.music //borrar
     }
+
 
 }

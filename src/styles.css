@@ -29,9 +29,17 @@
     .center {
         @apply flex flex-row justify-center items-center
     }
+
+    .sideText {
+        @apply  font-rs text-[4px] phone:text-[8px]  tablet:text-[10px] laptop:text-[13px] fullhd:text-[18px] text-center leading-[5px] tablet:leading-[8px] laptop:leading-4 textShadow
+    }
 }
 
 @font-face {
     font-family: 'rs';
     src: url("/fonts/runescape.ttf");
+}
+
+.textShadow {
+    text-shadow: 0px 1.2px #100d0d;
 }

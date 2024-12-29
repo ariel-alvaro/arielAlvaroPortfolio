@@ -13,4 +13,8 @@ import { MenuComponent } from "./features/sidemenu/components/menu/menu.componen
 })
 export class AppComponent {
   title = 'arielAlvaroPortfolio';
+
+
+
+  
 }

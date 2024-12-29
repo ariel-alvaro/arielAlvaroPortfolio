@@ -20,7 +20,7 @@
     <section class="fullscreen flex tablet:gap-0.5 tablet:p-1 center">
         <ng-container *ngFor="let option of options">
 
-            <div class="center h-[70%] w-[15%] ml-1 bg-gray-600  outterbox hover:cursor-pointer">
+            <div class="center h-[70%] w-[15%] ml-1 bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option.id)">
                 <div [style.background]="option.color" class="w-[92%] h-[92%] bg-red-950 innerbox center border-[1px] border-black ">
                     <img class="fullscreen" [src]="option.imageUrl"/>
                 </div>

@@ -11,3 +11,9 @@ export interface Skill {
     maxLevel: number
     iconUrl: string
 }
+
+export interface Track {
+    id: number
+    name: string
+    url: string
+}

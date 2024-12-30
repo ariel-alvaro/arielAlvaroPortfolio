@@ -1,4 +1,4 @@
-import { Component, ElementRef, TemplateRef, ViewChild, viewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, TemplateRef, ViewChild, viewChild } from '@angular/core';
 
 //Components
 
@@ -50,21 +50,25 @@ export class MenuComponent {
         {id: 6, description: "settings", imageUrl:"Sprites/settings.png", headerImageUrl: ""},
     ]
 
-    selection: NavOption = {id: 0, description: "skills", imageUrl:"Sprites/Skills.png", headerImageUrl: ""}
+    selection: NavOption = this.bottomOptions[0]
     selectedTemplate: TemplateRef<any> | null = null 
 
     sections: TemplateRef<any>[] = [] // templates refs
 
+    constructor(private change_detect: ChangeDetectorRef) {}
+
     // Update the selected template option
-    updateSelection(id: number) {
-        console.log(id)
-        this.selectedTemplate = this.sections[id]
-        console.log(this.selectedTemplate)
+    updateSelection(option: NavOption) {
+
+        this.selection = option
+        this.selectedTemplate = this.sections[option.id]
+
     }
     
     ngAfterViewInit() {
         this.sections = [this.skills, this.backpack, this.summary, this.about, this.account, this.music, this.settings];
-        this.selectedTemplate = this.music //borrar
+        this.selectedTemplate = this.about
+        this.change_detect.detectChanges()
     }
 
 

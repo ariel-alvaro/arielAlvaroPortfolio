@@ -1,8 +1,12 @@
-<section class="shaped bg-[url('/Sprites/textureNew.png')] bg-repeat bg-cover w-full tablet:p-1 h-[10%]">
-    <div class="texturedBg fullscreen">
-        <div class="h-full w-[14%] ml-2">
+<section class="shaped bg-[url('/Sprites/textureNew.png')] bg-repeat bg-cover w-full phone:p-0.5 fullhd:p-1 h-[10%] ">
+    <div class="texturedBg fullscreen flex gap-2">
+        <div class="desktop: w-[14%] ml-2 p-[1px] tablet:p-0.5">
             <img [src]="option?.imageUrl" class="fullscreen"/>
         </div>
+        <div class=" h-full center">
+            <p class="font-rsIN text-[0.2rem] phone:text-[0.4rem] tablet:text-lg fullhd:text-2xl text-[#f1c006] textShadow2">{{option.description.toUpperCase()}}</p>
+        </div>
+        
     </div>
 
 </section>

@@ -1,8 +1,8 @@
-<section class="fullscreen tablet:p-2 tablet:px-5 pb-8 flex flex-wrap overflow-scroll justify-center">
-    <ng-container *ngFor="let i of n">
-        <div class=" p-[1px] w-6 h-6 tablet:basis-1/4 tablet:h-auto tablet:w-auto">
+<section class="fullscreen p-3 tablet:p-2 tablet:px-5 pb-8 flex flex-wrap overflow-scroll justify-center">
+    <ng-container *ngFor="let item of items">
+        <div class=" p-[1px] w-6 h-6 tablet:basis-1/4 tablet:h-auto tablet:w-auto relative">
             <div class="w-[99%] h-[95%] glass center">
-                <img class="h-2/3 w-2/3 drop fullhd:w-[55%] fullhd:h-[55%]" src="/backpack/coffee.png"/>
+                <img *ngIf="item.imageUrl != ''" class="absolute w-1/2 h-1/2 " [src]="item.imageUrl"/>
             </div>
         </div>
     </ng-container>

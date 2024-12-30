@@ -14,19 +14,19 @@ export class NavComponent {
     
     @Input() options: NavOption[] = []
     @Input() type: NavType = NavType.upper
-    @Output() optionSelected = new EventEmitter<number>()
+    @Output() optionSelected = new EventEmitter<NavOption>()
 
     selected: number
 
     readonly navEnum = NavType
     
-    notifyChange(id: number) {
-        this.optionSelected.emit(id)
+    notifyChange(option: NavOption) {
+        this.optionSelected.emit(option)
     }
 
-    changeSelection(id: number) {
-        this.selected = id
-        this.notifyChange(id)
+    changeSelection(option: NavOption) {
+        this.selected = option.id
+        this.notifyChange(option)
     }
     
 

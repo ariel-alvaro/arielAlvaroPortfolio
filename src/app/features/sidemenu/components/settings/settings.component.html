@@ -1,1 +1,15 @@
-<p>settings works!</p>
+<section class="fullscreen">
+
+    <div class="h-1/3 w-full center p-2 gap-2">
+        <div class="w-4 h-4 tablet:w-8 tablet:h-8 fullhd:w-12 fullhd:h-12  center">
+            <img class="fullscreen" src="/music/music_volume.png"/>
+        </div>
+        <div class="range-slider w-2/3 ">
+            <input class="fullscreen" type="range" [value]="music_service.volume" min="0" max="100" range="true" (change)="changeVolume($event)">
+    
+        </div>
+    </div>
+
+    
+
+</section>

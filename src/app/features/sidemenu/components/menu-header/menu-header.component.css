@@ -26,3 +26,21 @@
     background: linear-gradient(180deg, rgba(138,88,48,1) 0%, rgba(117,68,35,1) 23%, rgba(138,88,48,1) 57%, rgba(138,88,48,1) 65%, rgba(167,92,50,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a5830",endColorstr="#a75c32",GradientType=1); 
 }
+
+.textShadow2 {
+    text-shadow: 0px 2px #100d0d;
+}
+
+/* Para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 1600px) {
+    .textShadow2 {
+        text-shadow: 0px 1.2px #100d0d; /* Cambia el tamaño de la sombra */
+    }
+}
+
+/* Para pantallas medianas (por ejemplo, tablets) */
+@media (max-width: 1024px) {
+    .textShadow2 {
+        text-shadow: 0px 0.6px #100d0d; /* Ajusta la sombra */
+    }
+}

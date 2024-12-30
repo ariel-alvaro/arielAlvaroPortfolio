@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
         fontFamily: {
-            'rs': ['rs']
+            'rs': ['rs'],
+            'rsCL': ['rsCL'],
+            'rsIN': ['rsIN']
         }
     },
     screens: {

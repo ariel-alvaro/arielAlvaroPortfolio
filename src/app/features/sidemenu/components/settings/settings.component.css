@@ -1,0 +1,63 @@
+.shaped {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+}
+
+/* Contenedor del slider */
+
+  /* Estilo general del slider */
+.range-slider{
+    font-family: 'Noto Sans', sans-serif;
+
+    position: relative;
+    z-index: 1;
+}
+.range-slider input[type="range"]{
+    border: 1px solid #717d83;
+    background: #3f5967;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+    background: rgb(131,115,52);
+    background: linear-gradient(129deg, rgba(131,115,52,1) 50%, rgba(223,157,33,1) 51%); 
+    border-radius: 0;
+    width: 5%;
+    height: 1.7rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+    clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 45%, 90% 50%, 100% 55%, 100% 80%, 50% 100%, 0 80%, 0 54%, 10% 50%, 0 45%);
+    background: rgb(246,195,60);
+    background: -moz-linear-gradient(90deg, rgba(246,195,60,1) 50%, rgba(205,138,25,1) 51%);
+    background: -webkit-linear-gradient(90deg, rgba(246,195,60,1) 50%, rgba(205,138,25,1) 51%);
+    background: linear-gradient(90deg, rgba(246,195,60,1) 50%, rgba(205,138,25,1) 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6c33c",endColorstr="#cd8a19",GradientType=1); 
+}
+
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 1280px) {
+    .range-slider input[type="range"]::-moz-range-thumb {
+        height: 1rem; /* Cambiar altura del thumb */
+    }
+}
+
+@media (max-width: 1024px) {
+    .range-slider input[type="range"]::-moz-range-thumb {
+        height: 1rem; /* Cambiar altura del thumb */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .range-slider input[type="range"]::-moz-range-thumb {
+        height: 0.6rem; /* Cambiar altura del thumb aún más */
+    }
+}

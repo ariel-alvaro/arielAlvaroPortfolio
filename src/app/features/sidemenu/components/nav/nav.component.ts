@@ -2,11 +2,12 @@ import { Component, EventEmitter, Input, input, Output } from '@angular/core';
 import { NavOption } from '@features/sidemenu/interfaces/sidemenu.interfaces';
 import { CommonModule } from '@angular/common';
 import { NavType } from '@features/sidemenu/enums/optionType.enum';
+import { DescriptionDirective } from 'src/app/shared/directives/description/description.directive';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DescriptionDirective],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })

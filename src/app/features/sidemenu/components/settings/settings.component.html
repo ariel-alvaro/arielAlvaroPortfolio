@@ -5,7 +5,7 @@
             <img class="fullscreen" src="/music/music_volume.png"/>
         </div>
         <div class="range-slider w-2/3 ">
-            <input class="fullscreen" type="range" [value]="music_service.volume" min="0" max="100" range="true" (change)="changeVolume($event)">
+            <input class="fullscreen" type="range" [value]="music_service.volume * 100" min="0" max="100" range="true" (change)="changeVolume($event)">
     
         </div>
     </div>

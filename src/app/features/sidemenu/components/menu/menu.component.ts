@@ -19,6 +19,7 @@ import { AboutComponent } from "../about/about.component";
 import { AccountComponent } from "../account/account.component";
 import { MusicComponent } from "../music/music.component";
 
+
 @Component({
   selector: 'app-menu',
   standalone: true,
@@ -36,6 +37,7 @@ export class MenuComponent {
     @ViewChild('settings') settings: TemplateRef<any>
 
     readonly navEnum = NavType;
+    
 
     upperOptions: NavOption[] = [
         {id: 0, description: "skills", imageUrl:"Sprites/Skills.png", headerImageUrl: ""},

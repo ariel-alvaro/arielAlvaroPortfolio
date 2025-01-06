@@ -29,9 +29,14 @@
     .center {
         @apply flex flex-row justify-center items-center
     }
-
+    .orangeT {
+        @apply text-[#ef8f30]
+    }
+    .greenT {
+        @apply text-[#38d832]
+    }
     .sideText {
-        @apply  font-rsCL text-[4px] phone:text-[8px]  tablet:text-[10px] laptop:text-[13px] fullhd:text-[18px] text-center leading-[5px] tablet:leading-[8px] laptop:leading-4 textShadow
+        @apply font-rsCL text-[4px] phone:text-[8px]  tablet:text-[10px] laptop:text-[13px] fullhd:text-[18px] text-center leading-[5px] tablet:leading-[8px] laptop:leading-4 textShadow
     }
 }
 

@@ -7,7 +7,7 @@
     <section class="h-full w-[50%] flex tablet:gap-0.5">
         <ng-container *ngFor="let option of options">
 
-            <div [style.background]="selected == option.id ? '#b2b2cd26': '#b2b2cd14'" class="shaped center h-full w-full ml-1 bg-orange-300 glassy hover:cursor-pointer" (click)="changeSelection(option)">
+            <div [Description]="option.description" [style.background]="selected == option.id ? '#b2b2cd26': '#b2b2cd14'" class="shaped center h-full w-full ml-1 bg-orange-300 glassy hover:cursor-pointer" (click)="changeSelection(option)">
                 <img class="h-[70%]" [src]="option.imageUrl"/>
             </div>
 
@@ -20,7 +20,7 @@
     <section class="fullscreen flex tablet:gap-0.5 tablet:p-1 center">
         <ng-container *ngFor="let option of options">
 
-            <div class="center h-[70%] w-[15%] ml-1 bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option)">
+            <div [Description]="option.description" class="center h-[70%] w-[15%] ml-1 bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option)">
                 <div [style.background]="option.color" class="w-[92%] h-[92%] bg-red-950 innerbox center border-[1px] border-black ">
                     <img class="fullscreen" [src]="option.imageUrl"/>
                 </div>

@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { Track } from '@features/sidemenu/interfaces/sidemenu.interfaces';
 import { MusicService } from '@features/sidemenu/services/music.service';
 import { audit, fromEvent } from 'rxjs';
+import { DescriptionDirective } from 'src/app/shared/directives/description/description.directive';
 
 @Component({
   selector: 'app-music',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DescriptionDirective],
   templateUrl: './music.component.html',
   styleUrl: './music.component.css'
 })
@@ -35,14 +36,19 @@ export class MusicComponent {
             id: 3,
             name: "Yesteryear",
             url: "https://oldschool.runescape.wiki/images/Yesteryear.ogg?03b03"
+        },
+        {
+            id: 4,
+            name: "Sea Shanty",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Sea_Shanty_%28v1%29.ogg/Sea_Shanty_%28v1%29.ogg.mp3"
         }
+        
     ]
     
     constructor(public music_service: MusicService) {}
 
-    // Play a song
+    // Play a song with hash id number
     play(id: number) {
-        console.log("track id ", id)
         let track: Track = this.tracks[id]
 
         this.playingTrackId = track.id

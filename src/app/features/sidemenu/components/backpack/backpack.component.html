@@ -2,7 +2,7 @@
     <ng-container *ngFor="let item of items">
         <div class=" p-[1px] w-6 h-6 tablet:basis-1/4 tablet:h-auto tablet:w-auto relative">
             <div class="w-[99%] h-[95%] glass center">
-                <img *ngIf="item.imageUrl != ''" class="absolute w-1/2 h-1/2 " [src]="item.imageUrl"/>
+                <img [Description]="item.name" *ngIf="item.imageUrl != ''" class="absolute w-1/2 h-1/2 " [src]="item.imageUrl"/>
             </div>
         </div>
     </ng-container>

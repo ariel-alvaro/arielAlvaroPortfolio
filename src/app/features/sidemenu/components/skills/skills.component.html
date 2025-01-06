@@ -2,8 +2,8 @@
     <ng-container *ngFor="let skill of skills">
         <div class="w-20 h-7 desktop:h-9 fullhd:h-auto desktop:basis-1/3 center">
 
-            <div class=" w-[90%] h-full inshadow bg-slate-900 border  relative">
-                <span class="absolute right-0.5 bottom-0 text-white text-[0.5rem] laptop:text-[0.5rem] desktop:text-[0.6rem] fullhd:text-[1.4vh]">{{skill.maxLevel}}</span>
+            <div [Description]="skill.name" class=" w-[90%] h-full inshadow bg-slate-900 border  relative">
+                <span class="absolute right-0.5 bottom-0 text-white text-[0.5rem] laptop:text-[0.5rem] desktop:text-[0.6rem] fullhd:text-[1.4vh]">{{skill.level}}</span>
 
                 <div class="inshape inshadow flex items-center fullscreen bg-slate-700 glassy p-0.5">
                     <div [style.background-image]="'url(' + skill.iconUrl + ')'" class="w-[40%] h-[80%] center  bg-contain bg-no-repeat"></div>

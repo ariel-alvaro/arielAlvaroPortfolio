@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Skill } from '@features/sidemenu/interfaces/sidemenu.interfaces';
+import { DescriptionDirective } from 'src/app/shared/directives/description/description.directive';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DescriptionDirective],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
@@ -14,8 +15,8 @@ export class SkillsComponent {
     skills: Skill[] = [
             { name: "C", level: 60, maxLevel: 99, iconUrl: "/Skills/c.png" },
             { name: "C++", level: 2, maxLevel: 99, iconUrl: "/Skills/c++.png" },
-            { name: "Csharp", level: 21, maxLevel: 99, iconUrl: "/Skills/csharp.png" },
-            { name: "Python_icon", level: 80, maxLevel: 99, iconUrl: "/Skills/python_icon.png" },
+            { name: "C#", level: 21, maxLevel: 99, iconUrl: "/Skills/csharp.png" },
+            { name: "Python", level: 80, maxLevel: 99, iconUrl: "/Skills/python_icon.png" },
             { name: "Java", level: 15, maxLevel: 99, iconUrl: "/Skills/java.png" },
             { name: "Go", level: 10, maxLevel: 99, iconUrl: "/Skills/go.png" },
             { name: "HTML5", level: 70, maxLevel: 99, iconUrl: "/Skills/HTML5.png" },
@@ -34,7 +35,7 @@ export class SkillsComponent {
             { name: "Nginx", level: 25, maxLevel: 99, iconUrl: "/Skills/nginx.png" },
             { name: "Docker", level: 33, maxLevel: 99, iconUrl: "/Skills/docker.png" },
             { name: "Git", level: 58, maxLevel: 99, iconUrl: "/Skills/git.png" },
-            { name: "Pattern", level: 7, maxLevel: 99, iconUrl: "/Skills/pattern.png" },
+            { name: "Dessing Pattern", level: 7, maxLevel: 99, iconUrl: "/Skills/pattern.png" },
             { name: "Linux", level: 80, maxLevel: 99, iconUrl: "/Skills/linux.png" }
       ];
       

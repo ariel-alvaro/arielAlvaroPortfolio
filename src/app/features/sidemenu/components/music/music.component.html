@@ -1,4 +1,5 @@
 <section class="fullscreen p-1" >
+
     <div class=" w-full h-[10%] " >
         <div  class="h-full w-1/6 center " >
             <img *ngIf="!music_service.paused" class="h-[70%]" src="/music/pause.png" (click)="music_service.pause()"/>
@@ -6,16 +7,18 @@
         </div>
 
     </div>
+
     <div class=" w-full h-[8%] border-[0.2px]  border-r-0 border-l-0 border-gray-600 center" >
-        <p *ngIf="music_service.playingSong != ''; else noSong" class="sideText text-[#ef8f30] font-bold">{{music_service.playingSong}}</p>
+        <p *ngIf="music_service.playingSong != ''; else noSong" class="sideText orangeT font-bold">{{music_service.playingSong}}</p>
     </div>
+
     <div class="h-[82%] w-full flex flex-col p-[4px] gap-[3px] tablet:p-2 tablet:gap-1">
         <ng-container *ngFor="let track of tracks">
-            <p class="sideText text-[#38d832] text-left hover:text-white hover:cursor-default" (click)="play(track.id)">{{track.name}}</p>
+            <p [Description]="'play |'.concat(track.name) " class="sideText greenT text-left hover:text-white hover:cursor-default" (click)="play(track.id)">{{track.name}}</p>
         </ng-container>
     </div>
 </section>
 
 <ng-template #noSong>
-    <p class="sideText text-[#ef8f30] font-bol">Play a song</p>
+    <p class="sideText orangeT font-bol">Play a song</p>
 </ng-template>

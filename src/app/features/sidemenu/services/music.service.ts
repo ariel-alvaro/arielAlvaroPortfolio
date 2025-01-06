@@ -1,6 +1,7 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 
-const START_VOLUME = 0.05 // 5% 
+const START_VOLUME = 0.2 // 5% 
 
 @Injectable({
     providedIn: 'root'
@@ -34,9 +35,13 @@ export class MusicService {
     }
 
     public setAudioVolume(value: number) {
+        this.volume = value
         this.audio.volume = value
     }
 
+    public setVolume(value: number) {
+        this.volume = value
+    }
     private setPaused(value: boolean) {
         if (this.playingSong == ""){
             return

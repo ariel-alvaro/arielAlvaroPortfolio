@@ -1,24 +1,27 @@
-<main class="w-screen h-screen p-5 bg-gray-500 relative">
-  <section class="fullscreen relative ">
-    <app-frame/>
-    <!-- <app-title/>   -->
+<main class="w-screen h-screen center bg-gray-500 relative">
+    <section class="w-[95%] h-[95%] relative ">
+        <app-frame/>
+        <!-- <app-title/>   -->
 
 
 
         
+   
 
 
-    <div class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-gray-500 p-8 pr-1.5 pb-1 ">
-        <div class="col-span-2 row-span-5 col-start-11 row-start-4 fullscreen ">
-            <app-menu/>
+        <div ResizeListener class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-gray-500 p-8 pr-1.5 pb-1 ">
+            <div class="col-span-2 row-span-5 col-start-11 row-start-4 fullscreen ">
+                <app-menu/>
+            </div>
+            <div class="col-span-2 row-span-3 col-start-11 row-start-1 fullscreen bg-blue-700">2</div>
+            <div class="col-span-10 row-span-6 col-start-1 row-start-1 fullscreen bg-red-500">3</div>
+            <div class="col-span-6 row-span-2 row-start-7 fullscreen border-2 bg-yellow-400">4</div>
         </div>
-        <div class="col-span-2 row-span-3 col-start-11 row-start-1 fullscreen bg-blue-700">2</div>
-        <div class="col-span-10 row-span-6 col-start-1 row-start-1 fullscreen bg-red-500">3</div>
-        <div class="col-span-6 row-span-2 row-start-7 fullscreen border-2 bg-yellow-400">4</div>
-    </div>
-        
-  </section>
+            
+    </section>
 
+    <!-- <span #descriptor id="descriptor" *ngIf="description_service.show" class="absolute w-8 h-8 bg-yellow-600 " [style.left.px]="description_service.mouseX" [style.top.px]="description_service.mouseY">></span> -->
 
+    <app-descriptor *ngIf="description_service.show"/>
 
 </main>

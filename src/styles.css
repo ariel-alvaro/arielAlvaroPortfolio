@@ -3,12 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 .glassy {
-
     background: #b2b2cd14;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0.1px );
     -webkit-backdrop-filter: blur( 10.5px );
-    
     border: 0.1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -36,7 +34,7 @@
         @apply text-[#38d832]
     }
     .sideText {
-        @apply font-rsCL text-[4px] phone:text-[8px]  tablet:text-[10px] laptop:text-[13px] fullhd:text-[18px] text-center leading-[5px] tablet:leading-[8px] laptop:leading-4 textShadow
+        @apply font-rsCL text-[10px] phone:text-[13px]  tablet:text-[16px] laptop:text-[16px] fullhd:text-[18px] text-center leading-[10px] tablet:leading-[12px] laptop:leading-4 textShadow
     }
 }
 

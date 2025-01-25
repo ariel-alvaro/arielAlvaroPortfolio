@@ -1,0 +1,86 @@
+<section class="fullscreen p-1">
+
+
+    <!-- Horizontal Line with title-->
+    <div class="w-full h-[2%] glassy p-[0.1px] rounded-sm"> 
+
+        <div class="fullscreen flex items-center bg-[url('/Sprites/textureNew.png')] bg-repeat shadow">
+
+            
+            <div class="w-1/4  h-[7vh] flex items-center justify-center relative -left-2"> 
+
+
+                <img class=" z-20 h-full rotate-180  absolute left-0" src="/Sprites/corner.png"/>
+                <img class=" z-50 h-full absolute right-0" src="/Sprites/corner.png"/>
+
+                <div class="w-[90%]  h-full center border-2  shaped ">
+                    
+                    <div class=" absolute fullscreen bg-[url('/Sprites/pattern.png')] bg-contain ">
+                        <div class="fullscreen bg-red-700 opacity-50"></div>
+                        <div class="w-full h-[10%] absolute top-0 bg-[url('/Sprites/textureNew.png')] bg-cover shadow"></div>
+                        <div class="w-full h-[10%] absolute bottom-0 bg-[url('/Sprites/textureNew.png')] bg-cover shadow"></div>
+                    </div>
+                    <h2 class="text-yellow-400 menu-font text-[3vh] z-10 uppercase font-bold text-center textshadow">{{selection}}</h2>
+                
+                </div>
+
+            </div>
+
+
+            
+
+        </div>
+    </div>
+    
+    <section class="w-full h-[15%] shadow z-0 bg-[url('/Sprites/bannerTexture.png')] bg-cover">
+        <ul class="fullscreen flex items-end">
+            <li routerLink="/home" routerLinkActive="active" 
+                class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
+                bg-[url('/Sprites/textureNew.png')] bg-cover shadow3 cursor-pointer 
+                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
+                    laptop:text-lg desktop:text-xl fullhd:text-2xl 
+                    relative top-[1px]"
+                    (click)="setSelection('home')" >
+                Home
+            </li>
+            <li routerLink="/projects" routerLinkActive="active" 
+                class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
+                    bg-[url('/Sprites/textureNew.png')] bg-cover shadow3 cursor-pointer 
+                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
+                    laptop:text-lg desktop:text-xl fullhd:text-2xl
+                    relative top-[1px]" 
+                    (click)="setSelection('projects')" >
+                Projects
+            </li>
+            <li routerLink="/education" routerLinkActive="active" 
+                class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
+                    bg-[url('/Sprites/textureNew.png')] bg-cover shadow3 cursor-pointer 
+                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
+                    laptop:text-lg desktop:text-xl fullhd:text-2xl
+                    relative top-[1px]" 
+                    (click)="setSelection('education')" >
+                Education
+            </li>
+            <li routerLink="/experience" routerLinkActive="active" 
+                class="item center font-rsCL w-[16%] tablet:w-[12%] h-[35%] text-[#5a727d] 
+                    bg-[url('/Sprites/textureNew.png')] bg-cover shadow3 cursor-pointer 
+                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
+                    laptop:text-lg desktop:text-xl fullhd:text-2xl
+                    relative top-[1px]" 
+                    (click)="setSelection('experience')" >
+                Experience
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="w-full h-[83%] bg-gray-800 p-[1px]">
+        <section class="fullscreen z-10 relative bg-[url('/Sprites/mainTexture.png')] bg-contain">
+            <router-outlet class="fullscreen"></router-outlet>
+        </section>
+    </section>
+
+    
+    <div class=" w-full h-[2%] bg-[url('/Sprites/textureNew.png')] bg-repeat"></div>
+    
+</section>

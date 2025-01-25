@@ -10,7 +10,7 @@
     width: 1vw;  /* Reducido a 1vw */
     height: 1vw; /* Mantenemos la proporción cuadrada */
     transform: rotate(45deg);
-    background-color: white;
+    background-color: black;
     margin: -0.5vw; /* La mitad del tamaño para el posicionamiento */
 }
 

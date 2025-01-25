@@ -27,6 +27,11 @@
     .center {
         @apply flex flex-row justify-center items-center
     }
+
+    .yellowT {
+        @apply text-[#ffcb05]    
+    }
+
     .orangeT {
         @apply text-[#ef8f30]
     }
@@ -34,8 +39,28 @@
         @apply text-[#38d832]
     }
     .sideText {
-        @apply font-rsCL text-[10px] phone:text-[13px]  tablet:text-[16px] laptop:text-[16px] fullhd:text-[18px] text-center leading-[10px] tablet:leading-[12px] laptop:leading-4 textShadow
+        @apply font-rsCL text-[6px] phone:text-[13px]  tablet:text-[16px] laptop:text-[16px] fullhd:text-[18px] text-center leading-[10px] tablet:leading-[12px] laptop:leading-4 textShadow
     }
+    
+    .mainText{
+        @apply font-rsCL text-[.25rem] smallPhone:text-[.35rem] phone:text-[.50rem] midPhone:text-[.65rem] bigPhone:text-[.80rem]  tablet:text-[1.2rem] laptop:text-[1.5rem] fullhd:text-[1.7rem]  textShadow
+    }
+
+    .bigText {
+        @apply text-[.50rem] smallPhone:text-[.80rem] phone:text-[1.4rem] bigPhone:text-[2.5rem] tablet:text-[3rem] laptop:text-[4rem] fullhd:text-[5rem]
+    }
+}
+
+.textshadow {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.menu-font {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {

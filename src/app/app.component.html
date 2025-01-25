@@ -1,5 +1,5 @@
-<main class="w-screen h-screen center bg-black relative">
-    <section class="w-[95%] h-[95%] relative ">
+<main class="w-screen h-screen center bg-black relative p-2">
+    <section class="fullscreen relative overflow-hidden">
         <app-frame/>
         <!-- <app-title/>   -->
 
@@ -9,15 +9,17 @@
    
 
 
-        <div ResizeListener class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-white p-8 pr-1.5 pb-1 ">
-            <div class="col-span-2 row-span-5 col-start-11 row-start-4 fullscreen ">
+        <div ResizeListener class="grid grid-cols-12 grid-rows-10 gap-1 fullscreen bg-black p-8 pr-1.5 pb-1 ">
+            <div class="col-span-2 row-span-8 col-start-11 row-start-5 fullscreen ">
                 <app-menu/>
             </div>
             <div class="col-span-2 row-span-3 col-start-11 row-start-1 fullscreen ">
                 <app-minimap/>
             </div>
-            <div class="col-span-10 row-span-6 col-start-1 row-start-1 fullscreen bg-red-500">3</div>
-            <div class="col-span-6 row-span-2 row-start-7 fullscreen border-2 bg-yellow-400">4</div>
+            <div class="col-span-8 row-span-9 col-start-2 row-start-1 fullscreen ">
+                <app-principal-menu/>
+            </div>
+            
         </div>
             
     </section>

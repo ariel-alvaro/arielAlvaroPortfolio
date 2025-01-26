@@ -1,0 +1,16 @@
+.shadow1 {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+}
+
+.shadow2 {
+    box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px rgba(0,0,0,0.25);
+}
+
+
+
+.skeumor {
+    box-shadow: 
+    1px 12px 8px 0 #9caeb856 inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border: 1px solid gray
+}

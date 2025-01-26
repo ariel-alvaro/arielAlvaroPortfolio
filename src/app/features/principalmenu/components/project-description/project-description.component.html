@@ -1,0 +1,49 @@
+<section class="fullscreen grid grid-cols-2 grid-rows-12 bigPhone:p-2 gap-0.5 bigPhone:gap-1">
+
+    <section class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-full h-[95%] skeu row-span-10 p-[1px]">
+
+        <div class="bg-[#0a1f29] fullscreen shadow1 flex flex-col p-1 phone:p-2 ">
+            <h3 class="mainText menu-font uppercase text-center yellowT">{{project.name}}</h3>
+            
+            <div class="w-full center font-rs text-[.20rem] phone:text-[.40rem] bigPhone:text-[.60rem] laptop:text-[.80rem] desktop:text-[1rem] text-[#8ca8b7] h-[10%] bg-[#071820]">
+                Year: {{project.year}}
+            </div>
+
+            <p class="text-[#8ca8b7] descriptionText text-left mt-2 overflow-scroll">
+               {{project.description}}
+            </p>
+
+        </div>
+        <p class="descriptionText font-extrabold text-[#ae8f0b] mt-[1px]">Stack</p>
+    </section>
+
+    <section class="border-[.10em] border-[#2f3d45 bg-[#0a1f29a4] fullscreen skeu row-span-6 p-[1px]">
+        
+        <div class="fullscreen bg-[#0a1f29] relative center">
+            <img class="fullscreen" [src]="project.imageUrl"/>
+        </div>
+
+        <div class="m-auto mt-2 w-1/2 relative rounded-sm laptop:rounded-lg h-[15%] bg-[url('/Sprites/bannerTexture.png')] bg-cover center overflow-hidden cursor-pointer">
+            <div class="fullscreen absolute bg-[#30c5f4] rounded-sm laptop:rounded-lg opacity-70 skeumor"></div>
+            <h3 class="relative z-10 menu-font text-[.20rem] phone:text-[.30rem] bigPhone:text-[.50rem] tablet:text-[.60rem] laptop:text-[.80rem] desktop:text-[1rem] ">GO TO PAGE</h3>
+            <a class="absolute z-20 fullscreen top-0" [href]="project.liveUrl" target="_blank"></a>
+        </div>
+    </section>
+
+    <section class="fullscreen col-span-2 row-span-3 flex flex-col relative">
+        
+       
+        <div class="fullscreen flex gap-1">
+            <ng-container *ngFor="let tech of project.tecnologies">
+                <div class="relative shadow1 w-[9%] h-full smallPhone:w-3 smallPhone:h-3 phone:w-5 phone:h-5 bigPhone:w-7 bigPhone:h-7 tablet:w-10 tablet:h-10  laptop:w-12 laptop:h-12 desktop:h-14 desktop:w-14">
+                    <div class="fullscreen shadow1 bg-[#030c0f] opacity-80 rounded-md"></div>
+                    <div class="fullscreen absolute top-0 phone:p-1 tablet:p-2">
+                        <img [Description]="tech.name" class="fullscreen" [src]="tech.imageUrl"/>
+                    </div>
+                    
+                </div> 
+            </ng-container>
+
+        </div>
+    </section>
+</section>

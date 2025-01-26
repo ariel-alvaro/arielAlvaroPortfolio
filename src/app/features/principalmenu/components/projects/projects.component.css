@@ -1,0 +1,21 @@
+.skeumor {
+    box-shadow: 
+    2px 5px 6px 0 #9caeb856 inset,
+    -12px -12px 12px 0 rgba(0, 0, 0, .25) inset;
+    border: 1px solid gray
+}
+
+.shadow1 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.shadow2 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.shadow3 {
+    box-shadow: 
+    1px 1px 8px 0 #9caeb856 inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border: 1px solid gray
+}

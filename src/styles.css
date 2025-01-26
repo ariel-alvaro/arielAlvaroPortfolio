@@ -38,6 +38,10 @@
     .greenT {
         @apply text-[#38d832]
     }
+    .descriptionText {
+        @apply font-rsCL text-[.25rem] phone:text-[.40rem] midPhone:text-[.65rem] tablet:text-[.80rem] laptop:text-[1rem] fullhd:text-[1.4rem]  textShadow
+    }
+
     .sideText {
         @apply font-rsCL text-[6px] phone:text-[13px]  tablet:text-[16px] laptop:text-[16px] fullhd:text-[18px] text-center leading-[10px] tablet:leading-[12px] laptop:leading-4 textShadow
     }

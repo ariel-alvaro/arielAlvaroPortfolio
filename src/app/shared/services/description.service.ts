@@ -25,7 +25,7 @@ export class DescriptionService {
 
     setDescriptorWidth(width: number) {
         this.descriptorWidht = width
-        console.log(width)
+
     }
 
     setShow(value: boolean) {
@@ -40,7 +40,7 @@ export class DescriptionService {
     
 
     setDescriptionElement(description: string, element: string) {
-        console.log(description, element)
+    
         this.description = description
         this.element = element
     }

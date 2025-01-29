@@ -1,7 +1,7 @@
 <section class="fullscreen flex p-1 ">
     <div class="h-full w-[50%]">
         <div class="w-full h-2/3 p-1">
-            <p class="sideText mb-1 yellowT">projects: {{projects.length}}</p>
+            <p class="descriptionText mb-1 yellowT text-center">projects: {{projects.length}}</p>
             <ng-container class="flex flex-col" *ngFor="let project of projects">
                 <div [ngClass]="actualProject && project.name === actualProject.name ? 'skeumor' : 'shadow3'" class="w-full h-[15%] max-h-full bg-[#0d2e3e] bigPhone:rounded-md flex items-center cursor-pointer" (click)="setProject(project)">
                     
@@ -10,7 +10,7 @@
                     <div class="font-rs center h-full w-5/6 phone:w-3/6 yellowT text-[.25rem] smallPhone:text-[.35rem] phone:text-[.40rem] bigPhone:text-[.70rem] tablet:text-[.85rem] laptop:text-[1rem] desktop:text-[1.3rem] fullhd:text-xl">
                         {{project.name}}
                     </div>
-
+                    
                     <div class="w-[30%] h-2/3 hidden phone:flex items-center gap-[5%]">
                         <div class="h-full w-fit bg-[#373831] rounded-full shadow1 p-0.5">
                             <div class="fullscreen bg-[#373831] rounded-full">

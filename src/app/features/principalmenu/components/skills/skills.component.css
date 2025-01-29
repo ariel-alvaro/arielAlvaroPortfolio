@@ -1,0 +1,37 @@
+li {
+    padding-left: 1em;
+    position: relative;
+    
+}
+
+li::after {
+    content: '';
+    height: .4em;
+    width: .4em;
+    background: #0b47c7;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: .50em;
+    left: .20em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.shaped {
+    clip-path: polygon(4% 0, 96% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+}
+
+
+.skeumor {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bordered {
+    border: 1px solid #3b4851;
+}
+.innerbox {
+    box-shadow: 
+    4px 4px 1px -0ch rgba(255, 255, 255, 0.123) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+
+}

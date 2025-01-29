@@ -36,7 +36,7 @@
         <div class="fullscreen flex gap-1">
             <ng-container *ngFor="let tech of project.tecnologies">
                 <div class="relative shadow1 w-[9%] h-full smallPhone:w-3 smallPhone:h-3 phone:w-5 phone:h-5 bigPhone:w-7 bigPhone:h-7 tablet:w-10 tablet:h-10  laptop:w-12 laptop:h-12 desktop:h-14 desktop:w-14">
-                    <div class="fullscreen shadow1 bg-[#030c0f] opacity-80 rounded-md"></div>
+                    <div class="fullscreen shadow1 bg-[#030c0f] opacity-80"></div>
                     <div class="fullscreen absolute top-0 phone:p-1 tablet:p-2">
                         <img [Description]="tech.name" class="fullscreen" [src]="tech.imageUrl"/>
                     </div>

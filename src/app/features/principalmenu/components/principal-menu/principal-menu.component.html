@@ -15,12 +15,12 @@
 
                 <div class="w-[90%]  h-full center border-2  shaped ">
                     
-                    <div class=" absolute fullscreen bg-[url('/Sprites/pattern.png')] bg-contain ">
+                    <div class=" absolute fullscreen bg-[url('/Sprites/textura2.png')] bg-cover ">
                         <div class="fullscreen bg-red-700 opacity-50"></div>
                         <div class="w-full h-[10%] absolute top-0 bg-[url('/Sprites/textureNew.png')] bg-cover shadow"></div>
                         <div class="w-full h-[10%] absolute bottom-0 bg-[url('/Sprites/textureNew.png')] bg-cover shadow"></div>
                     </div>
-                    <h2 class="text-yellow-400 menu-font text-[3vh] z-10 uppercase font-bold text-center textshadow">{{selection}}</h2>
+                    <h2 class="text-yellow-400 menu-font text-[2vh] phone:text-[2.5vh] z-10 uppercase font-bold text-center textshadow">{{selection}}</h2>
                 
                 </div>
 
@@ -43,6 +43,15 @@
                     (click)="setSelection('home')" >
                 Home
             </li>
+            <li routerLink="/skills" routerLinkActive="active" 
+            class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
+            bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
+                text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
+                laptop:text-lg desktop:text-xl fullhd:text-2xl 
+                relative top-[1px]"
+                (click)="setSelection('skills')" >
+            Skills
+        </li>
             <li routerLink="/projects" routerLinkActive="active" 
                 class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
                     bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
@@ -61,14 +70,14 @@
                     (click)="setSelection('education')" >
                 Education
             </li>
-            <li routerLink="/experience" routerLinkActive="active" 
+            <li routerLink="/resume" routerLinkActive="active" 
                 class="item center font-rsCL w-[16%] tablet:w-[12%] h-[35%] text-[#5a727d] 
                     bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
                     text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
                     laptop:text-lg desktop:text-xl fullhd:text-2xl
                     relative top-[1px]" 
-                    (click)="setSelection('experience')" >
-                Experience
+                    (click)="setSelection('Resume')" >
+                Resume
             </li>
             
         </ul>

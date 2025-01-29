@@ -39,7 +39,7 @@
         @apply text-[#38d832]
     }
     .descriptionText {
-        @apply font-rsCL text-[.25rem] phone:text-[.40rem] midPhone:text-[40.rem] tablet:text-[.80rem] laptop:text-[1rem] fullhd:text-[1.4rem]  textShadow
+        @apply font-rsCL text-[.25rem] phone:text-[.40rem] midPhone:text-[60.rem] bigPhone:text-[.70rem] tablet:text-[.80rem] laptop:text-[1rem] fullhd:text-[1.4rem]  textShadow
     }
 
     .sideText {

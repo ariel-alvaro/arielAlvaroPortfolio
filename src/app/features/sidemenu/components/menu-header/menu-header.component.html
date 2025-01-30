@@ -1,12 +1,7 @@
-<section class="shaped bg-[url('/Sprites/textureNew.png')] bg-repeat bg-cover w-full  h-[10%] p-[1px] phone:p-[2px] tablet:p-[3px] laptop:p-[4px]  ">
-    <div class="texturedBg inshaped fullscreen flex gap-2">
-        <div class="desktop: w-[14%] ml-2 p-[1px] tablet:p-0.5">
-            <img [src]="option?.imageUrl" class="fullscreen"/>
-        </div>
-        <div class=" h-full center">
-            <p class="font-rsIN text-[0.5rem] phone:text-[0.9rem] tablet:text-lg fullhd:text-2xl text-[#f1c006] textShadow2">{{option.description.toUpperCase()}}</p>
-        </div>
-        
+<section class="shaped bg-[url('/Sprites/textureNew.png')] bg-repeat bg-cover w-full  h-[10%] p-[0.5px] phone:p-[1px] tablet:p-[3px] laptop:p-[4px]  ">
+    <div class="texturedBg shaped fullscreen flex items-center gap-1 p-0.5">
+        <img class="w-2 h-2 phone:w-3 phone:h-3 bigPhone:h-5 bigPhone:w-5 laptop:h-6 laptop:w-6 desktop:h-6 desktop:w-6 fullhd:w-8 fullhd:h-8" [src]="option?.imageUrl"/>
+        <h3 class="text-[.20rem] phone:text-[.40rem] bigPhone:text-[.60rem] laptop:text-[1rem] fullhd:text-[1.4rem]  menu-font yellowT textshadow uppercase">{{option.description}}</h3>
     </div>
 
 </section>

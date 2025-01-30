@@ -2,6 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: yellow transparent;   /* scroll thumb and track */ 
+}
+  
+
 .glassy {
     background: #b2b2cd14;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -43,7 +50,7 @@
     }
 
     .sideText {
-        @apply font-rsCL text-[6px] phone:text-[13px]  tablet:text-[16px] laptop:text-[16px] fullhd:text-[18px] text-center leading-[10px] tablet:leading-[12px] laptop:leading-4 textShadow
+        @apply font-rsCL text-[.35rem] phone:text-[.50rem] bigPhone:text-[.70rem]  tablet:text-[1rem] laptop:text-[1.3rem] fullhd:text-[1.7rem] text-center leading-[0.25rem] phone:leading-[0.45rem] bigPhone:leading-[.50rem] tablet:leading-[12px] laptop:leading-4 fullhd:leading-5 textShadow
     }
     
     .mainText{

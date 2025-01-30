@@ -28,7 +28,7 @@ import { MusicComponent } from "../music/music.component";
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-    @ViewChild('skills') skills: TemplateRef<any>
+
     @ViewChild('backpack') backpack: TemplateRef<any>
     @ViewChild('summary') summary: TemplateRef<any>
     @ViewChild('about') about: TemplateRef<any>
@@ -40,16 +40,15 @@ export class MenuComponent {
     
 
     upperOptions: NavOption[] = [
-        {id: 0, description: "skills", imageUrl:"Sprites/Skills.png", headerImageUrl: ""},
-        {id: 1, description: "backpack", imageUrl:"Sprites/backpack.png", headerImageUrl: ""},
-        {id: 2, description: "summary", imageUrl:"Sprites/summary.png", headerImageUrl: ""},
+        {id: 0, description: "backpack", imageUrl:"Sprites/backpack.png", headerImageUrl: ""},
+        {id: 1, description: "summary", imageUrl:"Sprites/summary.png", headerImageUrl: ""},
     ]
     
     bottomOptions: NavOption[] = [
-        {id: 3, description: "about", imageUrl:"Sprites/about.png", headerImageUrl: "", color:'#204439'},
-        {id: 4, description: "social", imageUrl:"Sprites/social.png", headerImageUrl: "", color:"#672330"},
-        {id: 5, description: "music", imageUrl:"Sprites/music.png", headerImageUrl: "", color:"#7b3a1c"},
-        {id: 6, description: "settings", imageUrl:"Sprites/settings.png", headerImageUrl: ""},
+        {id: 2, description: "about", imageUrl:"Sprites/about.png", headerImageUrl: "", color:'#204439'},
+        {id: 3, description: "social", imageUrl:"Sprites/social.png", headerImageUrl: "", color:"#672330"},
+        {id: 4, description: "music", imageUrl:"Sprites/music.png", headerImageUrl: "", color:"#7b3a1c"},
+        {id: 5, description: "settings", imageUrl:"Sprites/settings.png", headerImageUrl: ""},
     ]
 
     selection: NavOption = this.bottomOptions[0]
@@ -68,7 +67,7 @@ export class MenuComponent {
     }
     
     ngAfterViewInit() {
-        this.sections = [this.skills, this.backpack, this.summary, this.about, this.account, this.music, this.settings];
+        this.sections = [this.backpack, this.summary, this.about, this.account, this.music, this.settings];
         this.selectedTemplate = this.about
         this.change_detect.detectChanges()
     }

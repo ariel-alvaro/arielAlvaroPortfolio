@@ -10,6 +10,7 @@ import { ResizeListenerDirective } from './shared/directives/resize/resize.direc
 import { DescriptorComponent } from './shared/components/descriptor/descriptor.component';
 import { MinimapComponent } from "./features/minimap/components/minimap/minimap.component";
 import { PrincipalMenuComponent } from "./features/principalmenu/components/principal-menu/principal-menu.component";
+import { OrientationService } from './core/services/orientation.service';
 
 
 @Component({
@@ -22,8 +23,9 @@ import { PrincipalMenuComponent } from "./features/principalmenu/components/prin
 export class AppComponent {
     title = 'arielAlvaroPortfolio';
 
-    constructor(public description_service: DescriptionService) {
-    }
+    constructor(public description_service: DescriptionService,
+                public orientation_service: OrientationService
+    ) {}
 
 
 }

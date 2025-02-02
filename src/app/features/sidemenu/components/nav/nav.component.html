@@ -3,26 +3,37 @@
 
 
 
-<nav *ngIf="type == navEnum.upper" class=" bg-red-700 h-[7%] bg-[url('/Sprites/textureNew.png')]">
-    <section class="h-full w-[50%] flex tablet:gap-0.5">
-        <ng-container *ngFor="let option of options">
+<nav *ngIf="type == navEnum.upper" class=" h-[9%] lg:h-[8%] bg-[url('/Sprites/textureNew.png')] flex pt-0.5">
 
-            <div [Description]="option.description" [style.background]="selected == option.id ? '#b2b2cd26': '#b2b2cd14'" class="shaped center h-full w-full ml-1 bg-orange-300 glassy hover:cursor-pointer" (click)="changeSelection(option)">
-                <img class="h-[70%]" [src]="option.imageUrl"/>
-            </div>
+    <ng-container *ngFor="let option of options">
+
+        <div 
+        [Description]="option.description" 
+        [style.background]="selected == option.id ? '#b2b2cd26': '#b2b2cd14'" 
+        class=" w-10 shaped center ml-1 glassy cursor-pointer" 
+        (click)="changeSelection(option)">
+
+            <img class="h-[70%]" [src]="option.imageUrl"/>
+
+        </div>
 
 
-        </ng-container>
-    </section>    
+    </ng-container>
+ 
 </nav>
 
-<nav *ngIf="type == navEnum.bottom" class=" bg-red-700 h-[13%] bg-[url('/Sprites/textureNew.png')] relative z-10">
-    <section class="fullscreen flex tablet:gap-0.5 laptop:gap-2 center">
+<nav *ngIf="type == navEnum.bottom" class="h-[12%] lg:h-[12%] bg-[url('/Sprites/textureNew.png')]">
+    <section class="fullscreen center gap-2">
         <ng-container *ngFor="let option of options">
 
-            <div [Description]="option.description" class="center h-[70%] w-[15%] ml-1 bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option)">
-                <div [style.background]="option.color" class="w-[98%] h-[98%] phone:w-[92%] phone:h-[92%] bg-red-950 innerbox center bigPhone:border-[1px] border-black ">
+            <div [Description]="option.description" class="center h-[70%] lg:h-[70%]  bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option)">
+                
+                <div 
+                [style.background]="option.color" 
+                class="w-[98%] h-[98%] innerbox center border-black  bg-red-950">
+                    
                     <img class="fullscreen" [src]="option.imageUrl"/>
+                
                 </div>
                
             </div>

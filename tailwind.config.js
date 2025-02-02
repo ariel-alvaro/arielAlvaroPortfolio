@@ -12,15 +12,12 @@ module.exports = {
         }
     },
     screens: {
-        'smallPhone': '370px',
-        'phone': '480px',
-        'midPhone': '620px',
-        'bigPhone': '800px',
-        'tablet': '1024px',
-        'laptop': '1280px',
-        'desktop': '1366px',
-        'fullhd': '1600px',
-        'fullhd2': '1900px'
+        'xs': '475px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px'
     }
   },
   plugins: [],

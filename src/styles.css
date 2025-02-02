@@ -7,7 +7,10 @@ body {
     scrollbar-width: thin;          /* "auto" or "thin" */
     scrollbar-color: yellow transparent;   /* scroll thumb and track */ 
 }
-  
+
+
+
+
 
 .glassy {
     background: #b2b2cd14;
@@ -45,20 +48,9 @@ body {
     .greenT {
         @apply text-[#38d832]
     }
-    .descriptionText {
-        @apply font-rsCL text-[.25rem] phone:text-[.40rem] midPhone:text-[60.rem] bigPhone:text-[.70rem] tablet:text-[.80rem] laptop:text-[1rem] fullhd:text-[1.4rem]  textShadow
-    }
 
-    .sideText {
-        @apply font-rsCL text-[.35rem] phone:text-[.50rem] bigPhone:text-[.70rem]  tablet:text-[1rem] laptop:text-[1.3rem] fullhd:text-[1.7rem] text-center leading-[0.25rem] phone:leading-[0.45rem] bigPhone:leading-[.50rem] tablet:leading-[12px] laptop:leading-4 fullhd:leading-5 textShadow
-    }
-    
-    .mainText{
-        @apply font-rsCL text-[.25rem] smallPhone:text-[.35rem] phone:text-[.50rem] midPhone:text-[.65rem] bigPhone:text-[.80rem]  tablet:text-[1.2rem] laptop:text-[1.5rem] fullhd:text-[1.7rem]  textShadow
-    }
-
-    .bigText {
-        @apply text-[.50rem] smallPhone:text-[.80rem] phone:text-[1.4rem] bigPhone:text-[2.5rem] tablet:text-[3rem] laptop:text-[4rem] fullhd:text-[5rem]
+    .side-text {
+        @apply font-rs text-center lg:text-xl 2xl:text-2xl
     }
 }
 

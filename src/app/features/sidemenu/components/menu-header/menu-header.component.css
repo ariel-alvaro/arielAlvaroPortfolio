@@ -12,7 +12,9 @@
 
 .shaped {
     clip-path: polygon(4% 0, 96% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    clip-path: none;
 }
+
 
 
 .textShadow2 {

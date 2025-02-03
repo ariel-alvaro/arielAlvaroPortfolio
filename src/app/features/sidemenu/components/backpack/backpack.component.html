@@ -1,8 +1,8 @@
-<section class="fullscreen p-3 tablet:p-2 tablet:px-5 pb-8 flex flex-wrap overflow-y-scroll justify-center">
+<section class="fullscreen flex flex-wrap justify-center p-2 ">
     <ng-container *ngFor="let item of items">
-        <div class=" p-[1px] w-6 h-6 tablet:basis-1/4 tablet:h-auto tablet:w-auto relative">
-            <div class="w-[99%] h-[95%] glass center">
-                <img [Description]="item.name" *ngIf="item.imageUrl != ''" class="absolute w-1/2 h-1/2 " [src]="item.imageUrl"/>
+        <div class=" p-[1px] h-[19%] basis-1/4">
+            <div class="fullscreen glass center p-1 md:p-2">
+                <img [Description]="item.name" *ngIf="item.imageUrl != ''" class=" " [src]="item.imageUrl"/>
             </div>
         </div>
     </ng-container>

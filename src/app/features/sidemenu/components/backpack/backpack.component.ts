@@ -34,10 +34,6 @@ export class BackpackComponent {
         {name: "", count: 0, imageUrl:""},
         {name: "", count: 0, imageUrl:""},
         {name: "", count: 0, imageUrl:""},
-        {name: "", count: 0, imageUrl:""},
-        {name: "", count: 0, imageUrl:""},
-        {name: "", count: 0, imageUrl:""},
-        {name: "", count: 0, imageUrl:""},
     ]
 
 }

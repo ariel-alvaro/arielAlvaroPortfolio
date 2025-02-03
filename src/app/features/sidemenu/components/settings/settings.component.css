@@ -15,7 +15,7 @@
     border: 1px solid #717d83;
     background: #3f5967;
     width: 100%;
-    height: 0.5rem;
+    height: 0.8rem;
     border-radius: 2px;
     outline: none;
     -webkit-appearance: none;
@@ -28,7 +28,7 @@
     background: rgb(131,115,52);
     background: linear-gradient(129deg, rgba(131,115,52,1) 50%, rgba(223,157,33,1) 51%); 
     border-radius: 0;
-    width: 5%;
+    width: 8%;
     height: 1.7rem;
     border: none;
     cursor: pointer;
@@ -43,21 +43,11 @@
 
 /* Media Query para pantallas pequeñas */
 
-@media (max-width: 1280px) {
-    .range-slider input[type="range"]::-moz-range-thumb {
-        height: 1rem; /* Cambiar altura del thumb */
-    }
-}
-
-@media (max-width: 1024px) {
-    .range-slider input[type="range"]::-moz-range-thumb {
-        height: 1rem; /* Cambiar altura del thumb */
-    }
-}
 
 /* Media Query para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .range-slider input[type="range"]::-moz-range-thumb {
-        height: 0.6rem; /* Cambiar altura del thumb aún más */
+        height: 1.5rem; /* Cambiar altura del thumb aún más */
+        width: 4%;
     }
 }

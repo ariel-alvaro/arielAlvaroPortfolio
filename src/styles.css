@@ -50,7 +50,7 @@ body {
     }
 
     .side-text {
-        @apply font-rs text-center lg:text-xl 2xl:text-2xl
+        @apply font-rs text-center text-xs lg:text-xl 2xl:text-2xl
     }
 }
 

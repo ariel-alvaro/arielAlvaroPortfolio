@@ -9,20 +9,20 @@
 
 
         <div ResizeListener class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-black ">
-            <div *ngIf="orientation_service.isHorizontal" class="row-start-1 col-start-1 row-span-8 col-span-8 fullscreen bg-red-900
-            xl:col-span-10
-
-                        sm:col-span-9
+            <div *ngIf="orientation_service.isHorizontal" 
+                  class="row-start-1 col-start-1 row-span-8 col-span-8 fullscreen bg-red-900
+                         xl:col-span-10
+                         sm:col-span-9
                         ">
 
             </div>
             
             <div *ngIf="!orientation_service.isHorizontal" class="row-start-1 col-start-1 col-span-12 row-span-4 bg-white"></div>
 
-            <div *ngIf="orientation_service.isHorizontal" class="row-span-5 row-start-4 col-span-4 fullscreen bg-red-500
-                        xl:col-start-11 xl:col-span-2
-                        sm:col-start-10 sm:col-span-3 sm:row-span-5 sm:row-start-4
-           
+            <div *ngIf="orientation_service.isHorizontal" 
+                        class="row-span-5 row-start-4 col-span-4 fullscreen bg-red-500
+                               xl:col-start-11 xl:col-span-2
+                               sm:col-start-10 sm:col-span-3 sm:row-span-5 sm:row-start-4
                         ">
                 
                 <app-menu/>
@@ -32,10 +32,10 @@
                 <app-menu/>
             </div>
 
-            <div *ngIf="orientation_service.isHorizontal" class="row-span-3 row-start-1 col-span-4 fullscreen bg-red-100
-        
-                        xl:col-start-11 xl:col-span-2
-                        sm:col-start-10  sm:col-span-3
+            <div *ngIf="orientation_service.isHorizontal" 
+                        class="row-span-3 row-start-1 col-span-4 fullscreen bg-red-100
+                               xl:col-start-11 xl:col-span-2
+                               sm:col-start-10  sm:col-span-3
                         
                         ">
                 <!-- <app-minimap/> -->

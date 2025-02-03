@@ -1,7 +1,7 @@
 <section class="fullscreen flex flex-wrap justify-center p-2 ">
     <ng-container *ngFor="let item of items">
         <div class=" p-[1px] h-[19%] basis-1/4">
-            <div class="fullscreen glass center p-1 md:p-2">
+            <div class="fullscreen shadow1 center p-1 md:p-2 rounded-sm">
                 <img [Description]="item.name" *ngIf="item.imageUrl != ''" class=" " [src]="item.imageUrl"/>
             </div>
         </div>

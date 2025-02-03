@@ -7,7 +7,7 @@
         <div class="fullscreen flex items-center bg-[url('/Sprites/textureNew.png')] bg-repeat shadow">
 
             
-            <div class="w-1/4  h-[7vh] flex items-center justify-center relative -left-2"> 
+            <div class="w-32 xs:h-12 xs:w-40 md:w-52 xl:h-14 xl:w-64 2xl:h-16 flex items-center justify-center relative -left-2"> 
 
 
                 <img class=" z-20 h-full rotate-180  absolute left-0" src="/Sprites/corner.png"/>
@@ -33,58 +33,43 @@
     </div>
     
     <section class="w-full h-[15%] shadow z-0 bg-[url('/Sprites/bannerTexture.png')] bg-cover">
-        <ul class="fullscreen flex items-end">
+        <ul class="fullscreen flex items-end router-text grayT">
             <li routerLink="/home" routerLinkActive="active" 
-                class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
-                bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
-                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
-                    laptop:text-lg desktop:text-xl fullhd:text-2xl 
-                    relative top-[1px]"
+                class="item center bg-[url('/Sprites/pattern.png')] bg-cover bg-left  shadow3 cursor-pointer relative top-[1px]
+                       w-[18%] lg:w-[12%] md:h-8"
                     (click)="setSelection('home')" >
                 Home
             </li>
             <li routerLink="/skills" routerLinkActive="active" 
-            class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
-            bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
-                text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
-                laptop:text-lg desktop:text-xl fullhd:text-2xl 
-                relative top-[1px]"
+                class="item center bg-[url('/Sprites/pattern.png')] bg-cover bg-left  shadow3 cursor-pointer relative top-[1px]
+                w-[18%] lg:w-[12%] md:h-8"
                 (click)="setSelection('skills')" >
             Skills
         </li>
             <li routerLink="/projects" routerLinkActive="active" 
-                class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
-                    bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
-                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
-                    laptop:text-lg desktop:text-xl fullhd:text-2xl
-                    relative top-[1px]" 
-                    (click)="setSelection('projects')" >
+                class="item center bg-[url('/Sprites/pattern.png')] bg-cover bg-left  shadow3 cursor-pointer relative top-[1px]
+                w-[18%] lg:w-[12%] md:h-8"
+                (click)="setSelection('projects')" >
                 Projects
             </li>
             <li routerLink="/education" routerLinkActive="active" 
-                class="item center font-rsCL w-[14%] tablet:w-[12%] h-[35%] text-[#5a727d] 
-                    bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
-                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
-                    laptop:text-lg desktop:text-xl fullhd:text-2xl
-                    relative top-[1px]" 
-                    (click)="setSelection('education')" >
+                class="item center bg-[url('/Sprites/pattern.png')] bg-cover bg-left  shadow3 cursor-pointer relative top-[1px]
+                w-[18%] lg:w-[12%] md:h-8"
+                (click)="setSelection('education')" >
                 Education
             </li>
             <li routerLink="/resume" routerLinkActive="active" 
-                class="item center font-rsCL w-[16%] tablet:w-[12%] h-[35%] text-[#5a727d] 
-                    bg-[url('/Sprites/pattern.png')] bg-cover bg-left shadow3 cursor-pointer 
-                    text-[.30rem] phone:text-[.50rem] bigPhone:text-[.70rem] tablet:text-sm
-                    laptop:text-lg desktop:text-xl fullhd:text-2xl
-                    relative top-[1px]" 
-                    (click)="setSelection('Resume')" >
+                class="item center bg-[url('/Sprites/pattern.png')] bg-cover bg-left  shadow3 cursor-pointer relative top-[1px]
+                w-[18%] lg:w-[12%] md:h-8"
+                (click)="setSelection('Resume')" >
                 Resume
             </li>
             
         </ul>
     </section>
 
-    <section class="w-full h-[83%] bg-gray-800 p-[1px]">
-        <section class="fullscreen z-10 relative bg-[url('/Sprites/mainTexture.png')] bg-contain">
+    <section class="w-full h-[83%] bg-gray-800">
+        <section class="fullscreen z-10 relative bg-[url('/Sprites/mainTexture.png')] bg-contain p-3 md:p-5 2xl:p-8">
             <router-outlet class="fullscreen"></router-outlet>
         </section>
     </section>

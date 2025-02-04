@@ -8,38 +8,31 @@
    
 
 
-        <div ResizeListener class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-black ">
-            <div *ngIf="orientation_service.isHorizontal" 
-                  class="row-start-1 col-start-1 row-span-8 col-span-8 fullscreen sm:p-8 lg:p-12
+        <div ResizeListener class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-black p-2 sm:p-0 sm:pt-2">
+            <div  
+                  class="row-start-1 col-start-1 row-span-4 col-span-12 fullscreen
+                         lg:col-span-8 lg:row-span-7 lg:p-8
                          xl:col-span-9
-                         sm:col-span-9
                         ">
                 <app-principal-menu/>
             </div>
             
-            <div *ngIf="!orientation_service.isHorizontal" class="row-start-1 col-start-1 col-span-12 row-span-4 p-2 sm:p-4">
-                <app-principal-menu/>
-            </div>
-
-            <div *ngIf="orientation_service.isHorizontal" 
-                        class="row-span-5 row-start-4 col-span-4 fullscreen
-                               sm:col-start-10 sm:col-span-3 sm:row-span-5 sm:row-start-4
-                               xl:pl-12 2xl:pl-20
-                        ">
+  
+            <div class="row-span-4 row-start-5 col-start-1 col-span-12 fullscreen
+                        sm:col-span-5
+                        lg:col-start-9 lg:col-span-4 lg:row-span-5 lg:row-start-4 
+                        xl:col-start-10 xl:col-span-3 xl:pl-16
+                ">
                 
                 <app-menu/>
             </div>
 
-            <div *ngIf="!orientation_service.isHorizontal" class="row-start-5 col-start-1 col-span-12 row-span-4 bg-red-300">
-                <app-menu/>
-            </div>
 
-            <div *ngIf="orientation_service.isHorizontal" 
-                        class="row-span-3 row-start-1 col-span-4 fullscreen bg-red-100
-                               sm:col-start-10  sm:col-span-3
-                        
-                        ">
-                <!-- <app-minimap/> -->
+
+            <div class="sm:row-start-5 sm:col-start-6 sm:col-span-7 sm:row-span-4 bg-white
+                        lg:col-start-9 lg:col-span-4 lg:row-start-1 lg:row-span-3
+                        xl:col-start-10 xl:col-span-3     ">
+               
             </div>
 
             

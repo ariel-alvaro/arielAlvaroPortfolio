@@ -20,6 +20,8 @@
     
 }
 
+
+
 .corner2 {
     border-radius: 0px;
     background:
@@ -34,7 +36,37 @@
 
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
 }
+@media (max-width:640px) {
+    .corner {
 
+        background:
+            radial-gradient(circle at top left, transparent 8%, #252633 0),
+            radial-gradient(circle at top right, transparent 8%, #252633 0),
+            radial-gradient(circle at bottom left, transparent 8%, #252633 0),
+            radial-gradient(circle at bottom right, transparent 8%, #252633 0);
+    
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: top left, top right, bottom left, bottom right;
+    
+        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    }
+
+    .corner2 {
+        border-radius: 0px;
+        background:
+            radial-gradient(circle at top left, transparent 4%, #252633 0),
+            radial-gradient(circle at top right, transparent 4%, #252633 0),
+            radial-gradient(circle at bottom left, transparent 4%, #252633 0),
+            radial-gradient(circle at bottom right, transparent 4%, #252633 0);
+    
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: top left, top right, bottom left, bottom right;
+    
+        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    }
+}
 .box {
     position: relative;
 }

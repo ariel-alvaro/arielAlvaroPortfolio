@@ -7,7 +7,7 @@
         <div class="fullscreen flex items-center bg-[url('/Sprites/textureNew.png')] bg-repeat shadow">
 
             
-            <div class="w-32 xs:h-12 xs:w-40 md:w-52 xl:h-14 xl:w-64 2xl:h-16 flex items-center justify-center relative -left-2"> 
+            <div class="w-32 sm:h-9 xs:w-40 md:h-11 md:w-52 xl:h-14 xl:w-64 2xl:h-16 flex items-center justify-center relative -left-2"> 
 
 
                 <img class=" z-20 h-full rotate-180  absolute left-0" src="/Sprites/corner.png"/>
@@ -20,7 +20,7 @@
                         <div class="w-full h-[10%] absolute top-0 bg-[url('/Sprites/textureNew.png')] bg-cover shadow"></div>
                         <div class="w-full h-[10%] absolute bottom-0 bg-[url('/Sprites/textureNew.png')] bg-cover shadow"></div>
                     </div>
-                    <h2 class="text-yellow-400 menu-font text-[2vh] phone:text-[2.5vh] z-10 uppercase font-bold text-center textshadow">{{selection}}</h2>
+                    <h2 class="text-yellow-400 menu-font z-10 uppercase font-bold text-center textshadow xl:text-xl">{{selection}}</h2>
                 
                 </div>
 
@@ -69,7 +69,7 @@
     </section>
 
     <section class="w-full h-[83%] bg-gray-800">
-        <section class="fullscreen z-10 relative bg-[url('/Sprites/mainTexture.png')] bg-contain p-3 md:p-5 2xl:p-8">
+        <section class="fullscreen z-10 relative bg-[url('/Sprites/mainTexture.png')] bg-contain p-3 md:p-5 2xl:p-8 overflow-hidden">
             <router-outlet class="fullscreen"></router-outlet>
         </section>
     </section>

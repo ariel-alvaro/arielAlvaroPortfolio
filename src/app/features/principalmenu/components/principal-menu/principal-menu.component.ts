@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { MenuOption } from '@features/principalmenu/enums/menu.enum';
 
 @Component({
@@ -15,4 +15,6 @@ export class PrincipalMenuComponent {
     setSelection(option: string) {
         this.selection = option
     }
+
+
 }

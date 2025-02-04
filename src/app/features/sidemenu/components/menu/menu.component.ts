@@ -68,7 +68,7 @@ export class MenuComponent {
     
     ngAfterViewInit() {
         this.sections = [this.backpack, this.summary, this.about, this.account, this.music, this.settings];
-        this.selectedTemplate = this.summary
+        this.selectedTemplate = this.about
         this.change_detect.detectChanges()
     }
 

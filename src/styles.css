@@ -54,11 +54,11 @@ body {
     }
 
     .side-text {
-        @apply font-rs text-center text-xs lg:text-xl 2xl:text-2xl
+        @apply font-rs text-center text-lg lg:text-xl 2xl:text-2xl
     }
 
     .router-text {
-        @apply font-rs text-center xl:text-lg 2xl:text-xl
+        @apply font-rs text-center text-sm xl:text-lg 2xl:text-xl
     }
 }
 

@@ -1,26 +1,25 @@
-<section class="fullscreen flex p-1 ">
-    <div class="h-full w-[50%]">
-        <div class="w-full h-2/3 p-1">
-            <p class="descriptionText mb-1 yellowT text-center">projects: {{projects.length}}</p>
+<section class="fullscreen flex flex-col sm:flex-row  p-1 ">
+    <div class=" w-full md:w-[40%] lg:w-1/2">
+        <div class="w-full h-2/3 font-rs p-1 yellowT">
+            <p class="text-xs md:text-lg mb-1 text-center">projects: {{projects.length}}</p>
             <ng-container class="flex flex-col" *ngFor="let project of projects">
-                <div [ngClass]="actualProject && project.name === actualProject.name ? 'skeumor' : 'shadow3'" class="w-full h-[15%] max-h-full bg-[#0d2e3e] bigPhone:rounded-md flex items-center cursor-pointer" (click)="setProject(project)">
+                <div [ngClass]="actualProject && project.name === actualProject.name ? 'skeumor' : 'shadow3'" 
+                     class=" bg-[#0d2e3e] lg:rounded-md center gap-2 cursor-pointer h-5 md:h-8 lg:h-10 xl:h-12 2xl:h-16 2xl:justify-around"  
+                     (click)="setProject(project)">
                     
-                    <img class="w-1/7 h-full p-[1px] fullhd2:w-14 fullhd2:h-14 tablet:p-1" [src]="project.iconUrl"/>
+                    <img class="h-full" [src]="project.iconUrl"/>
 
-                    <div class="font-rs center h-full w-5/6 phone:w-3/6 yellowT text-[.25rem] smallPhone:text-[.35rem] phone:text-[.40rem] bigPhone:text-[.70rem] tablet:text-[.85rem] laptop:text-[1rem] desktop:text-[1.3rem] fullhd:text-xl">
+                    <div class="center h-full text-[0.50rem] xs:text-[0.70rem] lg:text-base xl:text-lg 2xl:text-xl">
                         {{project.name}}
                     </div>
-                    
-                    <div class="w-[30%] h-2/3 hidden phone:flex items-center gap-[5%]">
-                        <div class="h-full w-fit bg-[#373831] rounded-full shadow1 p-0.5">
-                            <div class="fullscreen bg-[#373831] rounded-full">
-                                <img class="fullscreen" src="/Sprites/tick.png"/>
-                            </div>
-                        </div>
-                        <div class="font-rs yellowT text-[.30rem] bigPhone:text-[.50rem] tablet:text-[.70rem] laptop:text-base fullhd:text-xl">
-                            finished
+
+                    <div class=" bg-[#373831] w-6 h-6 rounded-full shadow1 p-0.5 hidden lg:block">
+                        <div class="fullscreen bg-[#373831] rounded-full">
+                            <img class="fullscreen" src="/Sprites/tick.png"/>
                         </div>
                     </div>
+
+                    <p class="text-xs lg:text-base hidden lg:block">finished</p>
 
 
                 </div>
@@ -28,10 +27,9 @@
         </div>
 
     </div>
-    <div class="fullscreen  ">
+    <div class="w-full h-[80%] sm:h-full">
 
-        <app-project-description *ngIf="actualProject" [project]="actualProject"/>
-        
+        <app-project-description *ngIf="actualProject" [project]="actualProject" />
     </div>
 </section>
 

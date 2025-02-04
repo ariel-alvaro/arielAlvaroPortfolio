@@ -36,5 +36,6 @@ export class ProjectsComponent {
     setProject(project: project) {
         this.actualProject = project
     }
+
     
 }

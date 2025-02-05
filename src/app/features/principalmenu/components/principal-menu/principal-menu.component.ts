@@ -10,11 +10,23 @@ import { MenuOption } from '@features/principalmenu/enums/menu.enum';
   styleUrl: './principal-menu.component.css'
 })
 export class PrincipalMenuComponent {
-    selection: string = MenuOption.home
+    route: string = MenuOption.home
+    
+
 
     setSelection(option: string) {
-        this.selection = option
+        this.route = option
     }
 
+    getRoute() {
+        const path = window.location.href
+        
+        let url = path.replace(/\/$/, '');
+        this.route = url.split('/').pop();
+    }
+
+    ngOnInit() {
+        this.getRoute()
+    }
 
 }

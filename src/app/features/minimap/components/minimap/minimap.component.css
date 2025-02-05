@@ -3,6 +3,13 @@
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.shadow2 {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.shadow3 {
+    box-shadow: rgba(178, 155, 155, 0.122) 0px -1px 5px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 .metalic {
 
     background: #666;
@@ -27,4 +34,41 @@
       linear-gradient(#fff1, #fff0 15%, #fff1 85%, #fff3),
       linear-gradient(#fff2, #fff0 20%, #0000 96%, #0006),
       linear-gradient(90deg, #555, #333 10%, #ccc 33%, #666 48% 52%, #fff 66% 75%, #555 90% 95%, #ccc)
+}
+
+
+
+.steps-count {
+
+
+
+    position: absolute;
+ 
+    top: 65%;
+    transform: translateY(-50%);
+
+
+}
+
+.steps-count::before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: -2px;
+    width: 12px;
+    height: 10px;
+    background: #5a4a32;
+ 
+    border-bottom: 2px solid #3b3221;
+    border-radius: 0 0 3px 3px;
+}
+
+.steps-icon {
+
+    background: radial-gradient(circle, #e6c352, #b07d2b);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.triangle {
+    clip-path: polygon(0 0, 100% 0, 85% 40%, 50% 100%, 15% 40%);
 }

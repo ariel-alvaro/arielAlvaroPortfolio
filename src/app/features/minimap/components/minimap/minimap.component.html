@@ -1,31 +1,37 @@
-<section class="fullscreen shadow overflow-hidden flex justify-end " >
+<section class="fullscreen relative" >
 
-    
-     
-    <div class="w-52 h-52 xl:w-60 xl:h-60 2xl:w-72 2xl:h-72 bg-white metalic rounded-full transition-all center relative">
+    <div class=" max-w-[85%] max-h-[95%] ml-auto aspect-square right-1 bg-white metalic rounded-full transition-all center relative ">
+        <div class="w-[3%] h-[3%] metalic absolute top-0 triangle rotate-180"></div>
+        <div class="w-[3%] h-[3%] metalic absolute left-0 triangle rotate-90"></div>
+        <div class="w-[3%] h-[3%] metalic absolute right-0 triangle -rotate-90"></div>
+        <div class="w-[3%] h-[3%] metalic absolute bottom-0 triangle"></div>
 
         <!-- Argentina -->
-        <div class="w-11 h-11 absolute z-10 bg-red-500 rounded-full right-0 bottom-0 metalic center bg-right">
 
-            <div class="w-[90%] h-[90%] bg-black rounded-full"></div>
+        <div Description="|Argentina" class="w-[20%] h-[20%] absolute z-10 bg-red-500 rounded-full right-0 bottom-0 metalic center bg-bottom">
+
+            <div class="w-[85%] h-[85%] bg-[url('/minimap/flagAR.png')] bg-cover rounded-full shadow3 opacity-80"></div>
         </div>
-        <div class="w-11 h-11 absolute z-10 bg-red-500 rounded-full -left-1 top-0 metalic center bg-right">
+        <!-- compass -->
+        <div class="w-[20%] h-[20%] absolute z-10 bg-red-500 rounded-full -left-1 top-0 metalic center bg-right">
 
-            <div class="w-[90%] h-[90%] bg-black rounded-full"></div>
+            <div class="w-[85%] h-[85%] bg-[url('/minimap/169.png')] bg-cover  rounded-full"></div>
         </div>
 
-        <figure class="absolute left-2 bottom-0 z-10">
-            <div class="w-11 h-11 z-10 bg-red-500 rounded-full  metalic center bg-right">
-                <div class="w-[85%] h-[85%] bg-black rounded-full"></div>
-            </div>
-            <div class="w-14 h-5 bg-stone-700 absolute bottom-[5%] right-6 metalic -z-10 center">
-                <div class="w-[94%] h-[90%] bg-gray-800 center relative ">
-                    <span class="relative right-2 font-rs yellowT">
-                        {{repo_stars}}
-                    </span>
+        <!-- Repo stars -->
+        <div  class="steps-container flex items-center absolute left-0 xl:left-2 bottom-5 2xl:bottom-9 z-10 transition-all">
+            <div class="steps-count w-[3.6vw] 2xl:w-[4vw] h-[2vw] flex items-center font-rs yellowT textShadow rounded-md absolute left-[-80%] metalic border-2 border-stone-600">
+                <div class="w-[90%] h-[95%] bg-gray-800 rounded-md center">
+                    <span class="relative right-1 2xl:text-lg">{{repo_stars}}</span>
                 </div>
             </div>
-        </figure>
+            <div Description="Repo |stars" class="steps-icon center relative w-[3vw] h-[3vw] border-2 border-[#7a5417] rounded-[50%]">
+                <img src="/minimap/github.png"/>
+                <a class="absolute w-full h-full" href="https://github.com/arielalvaro57666/arielAlvaroPortfolio" target="_blank"></a>
+
+            </div>
+        </div>
+
 
 
         <div class="w-[95%] h-[95%] bg-black rounded-full bg-[url('/minimap/map.png')] bg-cover bg-no-repeat relative overflow-hidden">
@@ -49,61 +55,7 @@
 
             <img Description="Agility training area" class=" absolute w-[8%] h-[8%] left-[19%] top-[33%]" src="/minimap/agility.png"/>
         </div>
-
-
     </div>
-
-
-    <!-- <section class="w-[90%] h-[90%]"> -->
-        
-        <!-- <div class="fullscreen bg-[url('/minimap/map.png')] bg-cover bg-no-repeat">
-            <img Description="Farming shop" class=" relative w-[8%] h-[8%] left-[10%] top-[15%]" src="/minimap/farming.png"/>
-            <img Description="Farming shop" class=" relative w-[8%] h-[8%] left-[50%] top-[80%]" src="/minimap/farming.png"/>
-            <img Description="Farming shop" class=" relative w-[8%] h-[8%] left-[70%] top-[50%]" src="/minimap/farming.png"/>             
-            <img Description="Agility training area" class=" relative w-[8%] h-[8%] left-[16%] top-[20%]" src="/minimap/agility.png"/>
-            <img Description="Fishing shop" class=" relative w-[8%] h-[8%] left-[80%] top-[6%]" src="/minimap/fishingshop.png"/>
-            <img Description="Fishing shop" class=" relative w-[8%] h-[8%] left-[30%] top-[0%]" src="/minimap/fishingshop.png"/>
-            <img Description="Dungeon" class=" relative w-[8%] h-[8%] left-[70%] bottom-[25%]" src="/minimap/dungeon.png"/>
-        </div> -->
-        <!-- Icons -->
-
-        <!-- <img Description="Home" class=" relative w-[8%] h-[8%] left-[40%] bottom-[66%]" src="/minimap/house.png"/>
-        
-        <img Description="Fishing spot" class=" relative w-[8%] h-[8%] left-[80%] bottom-[80%]" src="/minimap/fishing.png"/>
-        <img Description="Fishing spot" class=" relative w-[8%] h-[8%] left-[30%] bottom-[80%]" src="/minimap/fishing.png"/>
-        <img Description="Fishing spot" class=" relative w-[8%] h-[8%] left-[30%] bottom-[70%]" src="/minimap/fishing.png"/>
-        <img Description="Fishing spot" class=" relative w-[8%] h-[8%] left-[30%] bottom-[60%]" src="/minimap/fishing.png"/>
-
-        <img Description="Dungeon" class=" relative w-[8%] h-[8%] left-[8%] bottom-[99%]" src="/minimap/dungeon.png"/>
-        <img Description="Dungeon" class=" relative w-[8%] h-[8%] left-[80%] bottom-[70%]" src="/minimap/dungeon.png"/> -->
-
-    <!-- </section> -->
-
-    <!-- Corner Items -->
-    <!-- <figure Description="send| e-mail" class="w-[19%] h-[18%] rounded-full absolute center right-0 bottom-0 bg-[#011823] glassy">
-        <div class="w-[95%] h-[95%] rounded-full bg-[#0d181e] shadow center">
-            <img class="w-[80%] h-[70%] rounded-full" src="/minimap/email.png"/>
-        </div>
-        <a class="absolute w-full h-full" href="mailto:ariel57666@gmail.com" target="_blank"></a>
-    </figure>
-    <figure  Description="|Argentina" class="w-[19%] h-[18%] rounded-full absolute center right-0 top-0 bg-[#011823] glassy">
-        <div class="w-[95%] h-[95%] rounded-full bg-[#0d181e] shadow center">
-            <img class="w-[85%] h-[85%] rounded-full" src="/minimap/flagAR.png"/>
-        </div>
-    </figure>
-    <figure Description="go to|Github" class="w-[19%] h-[18%] rounded-full absolute center left-0 bottom-0 bg-[#011823] glassy">
-        <div class="w-[98%] h-[98%] rounded-full bg-[#0d181e] shadow center">
-            <img class="shadow skeu w-[85%] h-[85%] rounded-full" src="/minimap/github.png"/>
-        </div>
-        <a class="absolute w-full h-full" href="https://github.com/arielalvaro57666" target="_blank"></a>
-    </figure>
-
-    <figure class="w-[19%] h-[18%] rounded-full absolute center left-0 top-0 bg-[#011823] glassy">
-        <div class="w-[95%] h-[95%] rounded-full bg-[#0d181e] shadow center">
-            <img class="w-[85%] h-[85%] rounded-full" src="/minimap/Compass.png"/>
-        </div>
-    </figure> -->
-
 
 
 

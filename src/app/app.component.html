@@ -8,30 +8,37 @@
    
 
 
-        <div ResizeListener class="grid grid-cols-12 grid-rows-8 gap-1 fullscreen bg-black p-2 sm:p-0 sm:pt-2">
+        <div ResizeListener class="grid grid-cols-12 grid-rows-12 gap-1 fullscreen bg-black p-2 sm:p-0 sm:pt-2">
             <div  
-                  class="row-start-1 col-start-1 row-span-4 col-span-12 fullscreen 
-                         sm:col-span-8 sm:row-span-8 sm:p-2
-                         lg:col-span-9 lg:row-span-8 lg:p-8
+                  class="row-start-1 col-start-1 row-span-6 col-span-12 fullscreen 
+                         sm:col-span-8 sm:row-span-12 sm:p-2
+                         lg:col-span-9 lg:row-span-9 lg:p-8 lg:pb-0
                          xl:col-span-9
                         ">
                 <app-principal-menu/>
             </div>
             
-  
-            <div class="row-span-4 row-start-5 col-start-1 col-span-12 fullscreen
-                        sm:col-start-9 sm:col-span-4 sm:row-span-8  sm:row-start-1
-                        lg:col-start-10 lg:col-span-3 lg:row-span-5 lg:row-start-4  lg:pl-16
+            
+            <div class="hidden lg:block lg:col-start-1 lg:row-start-10 lg:col-span-9 lg:row-span-3 lg:px-8 lg:p-1 lg:fullscreen ">
+                <div class="fullscreen bg-white">
+                    <app-contact-menu/>
+                </div>
+            </div>
+
+            <div class="row-span-6 row-start-7 col-start-1 col-span-12 fullscreen
+                        sm:col-start-9 sm:col-span-4 sm:row-span-12  sm:row-start-1
+                        lg:col-start-10 lg:col-span-3 lg:row-span-7 lg:row-start-6  lg:pl-16
                 ">
                 
                 <app-menu/>
             </div>
 
+    
 
 
             <div class="hidden
-                        lg:block lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-3 
-                        xl:col-start-10 xl:col-span-3     ">
+                        lg:block lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-4 
+                        xl:col-start-10 xl:col-span-3">
 
                 <app-minimap/>
                

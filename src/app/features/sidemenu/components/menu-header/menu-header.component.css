@@ -12,7 +12,6 @@
 
 .shaped {
     clip-path: polygon(4% 0, 96% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
-    clip-path: none;
 }
 
 
@@ -30,6 +29,9 @@
 
 /* Para pantallas medianas (por ejemplo, tablets) */
 @media (max-width: 1024px) {
+    .shaped{
+        clip-path: none;
+    }
     .textShadow2 {
         text-shadow: 0px 0.6px #100d0d; /* Ajusta la sombra */
     }

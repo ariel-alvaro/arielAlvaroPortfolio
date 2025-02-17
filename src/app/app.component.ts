@@ -10,12 +10,13 @@ import { ResizeListenerDirective } from './shared/directives/resize/resize.direc
 import { DescriptorComponent } from './shared/components/descriptor/descriptor.component';
 import { MinimapComponent } from "./features/minimap/components/minimap/minimap.component";
 import { PrincipalMenuComponent } from "./features/principalmenu/components/principal-menu/principal-menu.component";
+import { ContactMenuComponent } from "./features/contact/components/contact-menu/contact-menu.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FrameComponent, TitleComponent, MenuComponent, DescriptionDirective, DescriptorComponent, CommonModule, ResizeListenerDirective, MinimapComponent, PrincipalMenuComponent],
+  imports: [RouterOutlet, FrameComponent, TitleComponent, MenuComponent, DescriptionDirective, DescriptorComponent, CommonModule, ResizeListenerDirective, MinimapComponent, PrincipalMenuComponent, ContactMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

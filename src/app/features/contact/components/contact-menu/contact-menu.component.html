@@ -1,0 +1,26 @@
+<section class="fullscreen bg-[url('/Sprites/textureNew.png')] relative yellowT">
+    <div class="glassy absolute w-full h-1 "></div>
+    <div class="glassy absolute h-[20%] w-1 left-0 "></div>
+    <div class="glassy absolute h-[20%] w-1 right-0 "></div>
+
+    <section class="w-full h-[20%]  center">
+        <h2 class="menu-font text-center uppercase">Send Email</h2>
+    </section>
+
+    <section class="w-full h-[80%] relative" (click)="setAreaFocus()">
+        <div class="glassy absolute w-full h-1 "></div>
+        <div class="glassy absolute w-full h-1 bottom-0 "></div>
+        <div class="glassy absolute h-full w-1 left-0 "></div>
+        <div class="glassy absolute  h-full w-1 right-0 "></div>
+
+        <textarea [(ngModel)]="message" class="fullscreen bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none bg-white" placeholder="press here to send email" rows="10"></textarea>
+        
+        <div  *ngIf=" message === '' " >
+            <img class="absolute top-[1.15rem] left-3" src="/contact/text.png"/>
+            <span class="absolute top-[.65rem] left-[1.6rem]">:</span>
+        </div>
+        
+        <button class="w-24 h-10 bg-slate-800 absolute right-1 bottom-1 shadow border-2 border-slate-900 uppercase menu-font center active:scale-95" >send</button>
+    </section>
+
+</section>

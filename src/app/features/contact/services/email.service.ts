@@ -12,12 +12,17 @@ export class EmailService {
 
 
     sendEmail(message: string) {   
-        emailjs.sendForm('service_wn30s6r', 'YOUR_TEMPLATE_ID', message, 'YOUR_USER_ID')
-        .then((result) => {
-            console.log("Email sent")
-        }, (error) => {
-            console.log(error.text);
-        });
+
+        
+        let request = fetch("http://localhost:8080/send-email", {
+            method: "POST",
+            headers: {"Content-Type":"aplication/json"},
+            body: JSON.stringify({
+                subject: "Hola",
+                body: "weaaa"
+            })
+        })
+        .then(r => console.log(r.status))
         
     }
 

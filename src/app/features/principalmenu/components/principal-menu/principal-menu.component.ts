@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { MenuOption } from '@features/principalmenu/enums/menu.enum';
+import { PrincipalMenuService } from '@features/principalmenu/services/principal-menu.service';
 
 @Component({
   selector: 'app-principal-menu',
@@ -10,23 +11,13 @@ import { MenuOption } from '@features/principalmenu/enums/menu.enum';
   styleUrl: './principal-menu.component.css'
 })
 export class PrincipalMenuComponent {
-    route: string = MenuOption.home
-    
 
+    constructor(public principal_service: PrincipalMenuService){}
 
     setSelection(option: string) {
-        this.route = option
+        console.log("wait")
     }
 
-    getRoute() {
-        const path = window.location.href
-        
-        let url = path.replace(/\/$/, '');
-        this.route = url.split('/').pop();
-    }
 
-    ngOnInit() {
-        this.getRoute()
-    }
 
 }

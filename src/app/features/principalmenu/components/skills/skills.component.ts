@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MenuOption } from '@features/principalmenu/enums/menu.enum';
+import { PrincipalMenuService } from '@features/principalmenu/services/principal-menu.service';
 import { DescriptionDirective } from 'src/app/shared/directives/description/description.directive';
 
 @Component({
@@ -10,4 +12,7 @@ import { DescriptionDirective } from 'src/app/shared/directives/description/desc
 })
 export class SkillsComponent {
 
+    constructor(public principal_service: PrincipalMenuService){
+        this.principal_service.setSelection(MenuOption.skills)
+    }
 }

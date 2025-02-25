@@ -1,3 +1,25 @@
 .shadow{
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+
+.spinner {
+   --d: 10.6px;
+   width: 1.9px;
+   height: 1.9px;
+   border-radius: 50%;
+   color: #ffcb05;
+   box-shadow: calc(1*var(--d))      calc(0*var(--d))     0 0,
+          calc(0.707*var(--d))  calc(0.707*var(--d)) 0 0.5px,
+          calc(0*var(--d))      calc(1*var(--d))     0 1px,
+          calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 1.4px,
+          calc(-1*var(--d))     calc(0*var(--d))     0 1.9px,
+          calc(-0.707*var(--d)) calc(-0.707*var(--d))0 2.4px,
+          calc(0*var(--d))      calc(-1*var(--d))    0 2.9px;
+   animation: spinner-a90wxe 1.2s infinite steps(8);
+}
+
+@keyframes spinner-a90wxe {
+   100% {
+      transform: rotate(1turn);
+   }
+}

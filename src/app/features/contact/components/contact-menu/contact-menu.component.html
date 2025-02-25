@@ -7,20 +7,37 @@
         <h2 class="menu-font text-center uppercase">Send Email</h2>
     </section>
 
-    <section class="w-full h-[80%] relative" (click)="setAreaFocus()">
+    <section class="w-full h-[80%] relative flex flex-col" >
         <div class="glassy absolute w-full h-1 "></div>
         <div class="glassy absolute w-full h-1 bottom-0 "></div>
         <div class="glassy absolute h-full w-1 left-0 "></div>
         <div class="glassy absolute  h-full w-1 right-0 "></div>
 
-        <textarea [(ngModel)]="message" class="fullscreen bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none bg-white" placeholder="press here to send email" rows="10"></textarea>
+        <textarea [(ngModel)]="subject" class="w-full lg:h-[35%] xl:h-[30%] bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none " placeholder="Subject" ></textarea>
+
+        <textarea [(ngModel)]="message" class="h-full w-[90%] bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none " placeholder="your message" rows="10"></textarea>
         
-        <div  *ngIf=" message === '' " >
-            <img class="absolute top-[1.15rem] left-3" src="/contact/text.png"/>
-            <span class="absolute top-[.65rem] left-[1.6rem]">:</span>
+        <div>
+            <img class="absolute top-[1rem] left-3" src="/contact/text.png"/>
+            <span class="absolute top-[.45rem] left-[1.6rem]">:</span>
         </div>
-        
-        <button class="w-24 h-10 bg-slate-800 absolute right-1 bottom-1 shadow border-2 border-slate-900 uppercase menu-font center active:scale-95" (click)="test()" >send</button>
+        <div class="w-24 h-10 absolute right-1 bottom-1 shadow border-2 bg-slate-800 border-slate-900 uppercase menu-font  center">
+            <ng-container [ngTemplateOutlet]="sending ? spinner : sendbutton"></ng-container>
+        </div>
+        <!-- <div class="w-24 h-10 bg-slate-800 absolute right-1 bottom-1 shadow border-2 border-slate-900 uppercase menu-font center active:scale-95 cursor-pointer">
+            <ng-container [ngTemplateOutlet]="sending ? spinner : sendbutton"></ng-container>
+        </div> -->
+        <!-- <button   >send</button> -->
     </section>
 
 </section>
+
+<ng-template #spinner>
+    <div class="spinner"></div>
+</ng-template>
+
+<ng-template #sendbutton>
+    <div class="fullscreen center cursor-pointer active:scale-95" (click)="sendEmail()">
+        SEND
+    </div>
+</ng-template>

@@ -42,4 +42,8 @@ export class ProjectsComponent {
         this.actualProject = project
     }
 
+    closeProject() {
+        this.actualProject = null
+    }
+
 }

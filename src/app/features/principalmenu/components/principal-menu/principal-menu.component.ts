@@ -13,11 +13,4 @@ import { PrincipalMenuService } from '@features/principalmenu/services/principal
 export class PrincipalMenuComponent {
 
     constructor(public principal_service: PrincipalMenuService){}
-
-    setSelection(option: string) {
-        console.log("wait")
-    }
-
-
-
 }

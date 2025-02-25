@@ -1,9 +1,13 @@
-<section class="fullscreen flex flex-wrap justify-center gap-1 p-8 xs:px-28 sm:px-0 md:px-10 lg:px-6 xl:px-3">
-    <ng-container *ngFor="let item of items">
-        <div class=" p-[1px] h-[20%] basis-[23%]">
-            <div class="h-full w-full shadow1 center p-1 md:p-2 rounded-sm">
-                <img [Description]="item.name" *ngIf="item.imageUrl != ''" class="w-7 h-7 " [src]="item.imageUrl"/>
+<section class="fullscreen  gap-1 p-8 xs:px-28 sm:px-0 md:px-10 lg:px-1 lg:h-full xl:px-3">
+    <div class="fullscreen flex flex-wrap justify-center">
+
+
+        <ng-container *ngFor="let item of items">
+            <div class=" p-[1px] h-[20%]  basis-[23%]">
+                <div class="h-full w-full shadow1 center p-1 md:p-2 rounded-sm">
+                    <img [Description]="item.name" *ngIf="item.imageUrl != ''" class="w-7 h-7 md:w-5 md:h-5 lg:w-8 lg:h-8" [src]="item.imageUrl"/>
+                </div>
             </div>
-        </div>
-    </ng-container>
+        </ng-container>
+    </div>
 </section>

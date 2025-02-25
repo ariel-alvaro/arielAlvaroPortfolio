@@ -1,6 +1,8 @@
 export enum MenuOption {
     home = "Home",
+    skills = "Skills",
     projects = "Project", 
     education = "Education",
-    experience = "Laboral Experience"
+    experience = "Laboral Experience",
+    resume = "Resume"
 }

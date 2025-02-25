@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import project from '@features/principalmenu/interfaces/principalSection.interfaces';
 import { ProjectDescriptionComponent } from "../project-description/project-description.component";
+import { MenuOption } from '@features/principalmenu/enums/menu.enum';
+import { PrincipalMenuService } from '@features/principalmenu/services/principal-menu.service';
 
 @Component({
   selector: 'app-projects',
@@ -12,6 +14,9 @@ import { ProjectDescriptionComponent } from "../project-description/project-desc
 })
 export class ProjectsComponent {
     actualProject: project
+    constructor(public principal_service: PrincipalMenuService){
+        this.principal_service.setSelection(MenuOption.projects)
+    }
 
     projects: project[] = [
         {
@@ -37,5 +42,4 @@ export class ProjectsComponent {
         this.actualProject = project
     }
 
-    
 }

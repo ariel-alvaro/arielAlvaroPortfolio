@@ -1,6 +1,12 @@
 .shadow{
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+.shaped {
+   clip-path: polygon(1% 0, 99% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+.shaped2 {
+   clip-path: polygon(1% 0, 99% 0, 100% 50%, 100% 100%, 0 100%, 0 50%);
+}
 
 .spinner {
    --d: 10.6px;

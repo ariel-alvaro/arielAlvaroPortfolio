@@ -46,7 +46,7 @@ export class MenuComponent {
     
     bottomOptions: NavOption[] = [
         {id: 2, description: "about", imageUrl:"Sprites/about.png", headerImageUrl: "", color:'#204439'},
-        {id: 3, description: "social", imageUrl:"Sprites/social.png", headerImageUrl: "", color:"#672330"},
+        {id: 3, description: "contact", imageUrl:"Sprites/social.png", headerImageUrl: "", color:"#672330"},
         {id: 4, description: "music", imageUrl:"Sprites/music.png", headerImageUrl: "", color:"#7b3a1c"},
         {id: 5, description: "settings", imageUrl:"Sprites/settings.png", headerImageUrl: ""},
     ]

@@ -1,20 +1,18 @@
-<section class="fullscreen bg-[url('/Sprites/textureNew.png')] relative yellowT">
-    <div class="glassy absolute w-full h-1 "></div>
-    <div class="glassy absolute h-[20%] w-1 left-0 "></div>
-    <div class="glassy absolute h-[20%] w-1 right-0 "></div>
+<section class="fullscreen bg-[url('/Sprites/textureNew.png')] relative yellowT shaped p-1">
 
-    <section class="w-full h-[20%]  center">
-        <h2 class="menu-font text-center uppercase">Send me an email</h2>
+
+    <section class="w-full h-[20%] bg-[url('/Sprites/banner.png')] center relative bg-cover shaped2">
+        <h2 class="menu-font text-center textshadow uppercase ">Send me an email</h2>
+  
+       
     </section>
 
-    <section class="w-full h-[80%] relative flex flex-col" >
-        <div class="glassy absolute w-full h-1 "></div>
-        <div class="glassy absolute w-full h-1 bottom-0 "></div>
-        <div class="glassy absolute h-full w-1 left-0 "></div>
-        <div class="glassy absolute  h-full w-1 right-0 "></div>
 
-        <textarea [(ngModel)]="subject" class="w-full lg:h-[35%] xl:h-[30%] bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none " placeholder="Subject" ></textarea>
+    <section class="w-full h-[80%] relative flex flex-col border-2 border-gray-700" >
 
+
+        <textarea [(ngModel)]="subject" class="w-full lg:h-[50%] xl:h-[30%] bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none " placeholder="Subject" ></textarea>
+        <div class="w-full h-1 glassy"></div>
         <textarea [(ngModel)]="message" class="h-full w-[90%] bg-transparent resize-none font-rs text-lg pt-2 px-9  outline-none " placeholder="your message" rows="10"></textarea>
         
         <div>

@@ -1,11 +1,10 @@
 
 
 .texturedBg {
-    background-color: #68371a;
-    background-image: url("/Sprites/rockywall.png");
-    background-color: #512b15; /* Color semitransparente */
+
+    background-image: url("/Sprites/banner.png");
+    background-color: #f3a20b81; /* Color semitransparente */
     background-blend-mode: overlay; /* Mezcla el color con la imagen */
-    
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 
 }

@@ -1,5 +1,5 @@
-<section class="fullscreen flex flex-col sm:flex-row  p-1 ">
-    <div *ngIf="actualProject == null" class=" w-full md:w-[40%] lg:w-1/2">
+<section class="fullscreen flex flex-col items-center  p-1 ">
+    <div *ngIf="actualProject == null" class=" w-1/2">
         <div class="w-full h-2/3 font-rs p-1 yellowT">
             <p class="text-xs md:text-lg mb-1 text-center">projects: {{projects.length}}</p>
             <ng-container class="flex flex-col" *ngFor="let project of projects">
@@ -27,7 +27,7 @@
         </div>
 
     </div>
-    <div class="w-full h-[80%] sm:h-full">
+    <div class="w-full h-full">
 
         <app-project-description *ngIf="actualProject" [project]="actualProject" (closeProject)="closeProject()"/>
     </div>

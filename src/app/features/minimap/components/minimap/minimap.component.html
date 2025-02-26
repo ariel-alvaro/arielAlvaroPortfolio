@@ -8,32 +8,108 @@
 
         <!-- Argentina -->
 
-        <div Description="|Argentina" class="w-[20%] h-[20%] absolute z-10 bg-red-500 rounded-full right-0 bottom-0 metalic center bg-bottom">
+        <div class="w-[21%] h-[20%] absolute z-20  rounded-full right-0 bottom-0 metalic center bg-bottom">
 
-            <div class="w-[85%] h-[85%] bg-[url('/minimap/flagAR.png')] bg-cover rounded-full shadow3 opacity-80"></div>
-        </div>
-        <!-- compass -->
-        <div class="w-[20%] h-[20%] absolute z-10 bg-red-500 rounded-full -left-1 top-0 metalic center bg-right">
-
-            <div class="w-[85%] h-[85%] bg-[url('/minimap/169.png')] bg-cover  rounded-full"></div>
+            <div  Description="|Argentina"  class="w-[85%] h-[85%] bg-[url('/minimap/flagAR.png')] relative z-10 bg-cover rounded-full shadow3 opacity-80"></div>
         </div>
 
-        <!-- Repo stars -->
-        <div  class="steps-container flex items-center absolute left-0 xl:left-2 bottom-5 2xl:bottom-9 z-10 transition-all">
-            <div class="steps-count w-[3.6vw] 2xl:w-[4vw] h-[2vw] flex items-center font-rs yellowT textShadow rounded-md absolute left-[-80%] metalic border-2 border-stone-600">
-                <div class="w-[90%] h-[95%] bg-gray-800 rounded-md center">
-                    <span class="relative right-1 2xl:text-lg">{{repo_stars}}</span>
+
+
+
+        <section class="absolute w-[140%] flex flex-col gap-2 bottom-0">
+            <!-- Compass -->
+            <div class="w-[140%] flex flex-col justify-center items-end  gap-2  relative ">
+                <div class="w-[88%] ">
+                    <div  class="steps-container flex items-center z-10 transition-all  relative ">
+                        
+                        <div class="steps-icon2 center w-[2.5vw] h-[2.5vw] border-2 border-[#ad7b3b] rounded-[50%] center relative">
+                            <img class="fullscreen rounded-full" src="/minimap/169.png"/>
+
+            
+                        </div>
+                    </div>
                 </div>
+
+    
+                
+                
             </div>
-            <div Description="Repo |stars" class="steps-icon center relative w-[3vw] h-[3vw] border-2 border-[#7a5417] rounded-[50%]">
-                <img src="/minimap/github.png"/>
-                <a class="absolute w-full h-full" href="https://github.com/arielalvaro57666/arielAlvaroPortfolio" target="_blank"></a>
-
+            <!-- GITHUB STARS -->
+            <div class="w-[140%] flex flex-col justify-center items-end  gap-2  relative ">
+                <div class="w-[93%] ">
+                    <div  class="steps-container flex items-center z-10 transition-all  relative ">
+                    
+                        <div Description="repo| stars" class="steps-icon center w-[2.5vw] h-[2.5vw] border-2 border-[#3b3834] rounded-[50%] relative">
+                            <img src="/minimap/github.png"/>
+                            <a class="absolute w-full h-full" href="https://github.com/AlvaroAriel/arielAlvaroPortfolio" target="_blank"></a>
+            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="steps-count w-[3vw] h-[1.7vw] flex items-center font-rs yellowT textShadow  metalic border-2 border-stone-600 ">
+                    <div class="fullscreen bg-gray-800 center">
+                        <span class="relative right-1 2xl:text-lg">{{repo_stars}}</span>
+                    </div>
+                </div>
+    
+                
+                
             </div>
-        </div>
+            <!-- LINKEDIN -->
+            <div class="w-[140%] flex flex-col justify-center items-end  gap-2  relative ">
+                <div class="w-[95%] ">
+                    <div  class="steps-container flex items-center z-10 transition-all  relative ">
+                    
+                        <div Description="|linkedin" class="steps-icon2 center w-[2.5vw] h-[2.5vw] border-2 border-[#3b3834] rounded-[50%] p-1 center relative">
+                            <img src="/minimap/in.png"/>
+                            <a class="absolute w-full h-full" href="https://www.linkedin.com/in/ariel-alvaro/" target="_blank"></a>
+            
+                        </div>
+                    </div>
+                </div>
 
+    
+                
+                
+            </div>
+            <!-- EMAIL -->
+            <div class="w-[140%] flex flex-col justify-center items-end  gap-2  relative ">
+                <div class="w-[92%] ">
+                    <div  class="steps-container flex items-center z-10 transition-all  relative ">
+                    
+                        <div Description="|email" class="steps-icon3 center w-[2.5vw] h-[2.5vw] border-2 border-[#3b3834] rounded-[50%] p-1 center relative">
+                            <img src="/minimap/mail.png"/>
+                            <a class="absolute w-full h-full" href="mailto:ariel57666@gmail.com" target="_blank"></a>
+            
+                        </div>
+                    </div>
+                </div>
 
+    
+                
+                
+            </div>
+            <!-- GITHUB -->
+            <div class="w-[140%] flex flex-col justify-center items-end ">
+                <div class="w-[86%] ">
+                    <div  class="steps-container flex items-center z-10 transition-all  relative ">
+                    
+                        <div Description="|github" class="steps-icon center w-[2.5vw] h-[2.5vw] border-2 border-[#3b3834] rounded-[50%] center relative">
+                            <img src="/minimap/git.png"/>
+                            <a class="absolute w-full h-full" href="https://github.com/AlvaroAriel/" target="_blank"></a>
+            
+                        </div>
+                    </div>
+                </div>
 
+    
+                
+                
+            </div>
+        </section>
+
+        
         <div class="w-[95%] h-[95%] bg-black rounded-full bg-[url('/minimap/map.png')] bg-cover bg-no-repeat relative overflow-hidden">
             <img Description="Home" class=" absolute w-[8%] h-[8%] left-[36%] bottom-[66%]" src="/minimap/house.png"/>
             

@@ -26,30 +26,27 @@
 
 .steps-count {
     position: absolute;
- 
-    top: 65%;
-    transform: translateY(-50%);
+    bottom: 0px;
+    left:0;
+
 }
 
-.steps-count::before {
-    content: "";
-    position: absolute;
-    right: -5px;
-    bottom: -2px;
-    width: 12px;
-    height: 10px;
-    background: #5a4a32;
- 
-    border-bottom: 2px solid #3b3221;
-    border-radius: 0 0 3px 3px;
-}
+
 
 .steps-icon {
-
-    background: radial-gradient(circle, #e6c352, #b07d2b);
+    background: radial-gradient(circle, #d3cccc, #0d0d0c);
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.steps-icon2 {
+    background: radial-gradient(circle, #1770b0, #1ac4cd);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.steps-icon3 {
+    background: radial-gradient(circle, #ffffff, #b3aea0);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
 .triangle {
     clip-path: polygon(0 0, 100% 0, 85% 40%, 50% 100%, 15% 40%);
 }

@@ -12,7 +12,7 @@
         <p *ngIf="music_service.playingSong != ''; else noSong" class="orangeT font-bold">{{music_service.playingSong}}</p>
     </div>
 
-    <div class="h-[82%] w-full flex flex-col p-[4px] gap-[3px] tablet:p-2 tablet:gap-1">
+    <div class="h-[82%] w-full flex flex-col p-[4px] gap-[3px] tablet:p-2 tablet:gap-1 overflow-y-scroll">
         <ng-container *ngFor="let track of tracks">
             <p [Description]="'play |'.concat(track.name) " class="greenT text-left hover:text-white hover:cursor-default" (click)="play(track.id)">{{track.name}}</p>
         </ng-container>

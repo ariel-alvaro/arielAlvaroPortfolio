@@ -10,7 +10,7 @@
         <div 
         [Description]="option.description" 
         [style.background]="selected == option.id ? '#b2b2cd26': '#b2b2cd14'" 
-        class=" w-10 shaped center ml-1 glassy cursor-pointer" 
+        class=" w-10 shaped center ml-1 glassy2 cursor-pointer" 
         (click)="changeSelection(option)">
 
             <img class="h-[70%]" [src]="option.imageUrl"/>
@@ -22,11 +22,14 @@
  
 </nav>
 
-<nav *ngIf="type == navEnum.bottom" class="h-[12%] lg:h-[12%] bg-[url('/Sprites/textureNew.png')]">
+<nav *ngIf="type == navEnum.bottom" class="h-[12%] lg:h-[12%] bg-[url('/Sprites/textureNew.png')] relative">
+    <div class="glassy2 absolute w-full h-1 bottom-0 bg-red-500"></div>
+    <div class="glassy2 absolute h-full w-1 left-0 bg-red-500"></div>
+    <div class="glassy2 absolute h-full w-1 right-0 bg-red-500"></div>
     <section class="fullscreen center gap-2">
         <ng-container *ngFor="let option of options">
 
-            <div [Description]="option.description" class="center h-[70%] lg:h-[70%]  bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option)">
+            <div [Description]="option.description" class="center h-[80%] sm:h-[50%] lg:h-[60%] xl:h-[70%]  bg-gray-600  outterbox hover:cursor-pointer" (click)="changeSelection(option)">
                 
                 <div 
                 [style.background]="option.color" 

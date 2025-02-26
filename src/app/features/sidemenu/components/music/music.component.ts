@@ -41,6 +41,61 @@ export class MusicComponent {
             id: 4,
             name: "Sea Shanty",
             url: "https://oldschool.runescape.wiki/images/transcoded/Sea_Shanty_%28v1%29.ogg/Sea_Shanty_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 5,
+            name: "Medieval",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Medieval_%28v1%29.ogg/Medieval_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 6,
+            name: "Magic Dance",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Magic_Dance_%28v1%29.ogg/Magic_Dance_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 7,
+            name: "Splendour",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Splendour_%28v1%29.ogg/Splendour_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 8,
+            name: "Garden",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Garden_%28v1%29.ogg/Garden_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 9,
+            name: "Shadowland",
+            url: "https://oldschool.runescape.wiki/images/Shadowland_%28v1%29.ogg?54afd"
+        },
+        {
+            id: 10,
+            name: "Scape soft",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Scape_Soft_%28v1%29.ogg/Scape_Soft_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 11,
+            name: "Adventure",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Adventure_%28v1%29.ogg/Adventure_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 12,
+            name: "Baroque",
+            url: "https://oldschool.runescape.wiki/images/Baroque_%28v1%29.ogg?2bc94"
+        },
+        {
+            id: 13,
+            name: "Newbie Melody",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Newbie_Melody_%28v1%29.ogg/Newbie_Melody_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 13,
+            name: "Camelot",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Camelot_%28v1%29.ogg/Camelot_%28v1%29.ogg.mp3"
+        },
+        {
+            id: 13,
+            name: "Greatness",
+            url: "https://oldschool.runescape.wiki/images/transcoded/Greatness_%28v1%29.ogg/Greatness_%28v1%29.ogg.mp3"
         }
         
     ]

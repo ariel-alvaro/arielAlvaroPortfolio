@@ -16,7 +16,7 @@ export class MusicService {
     public play(name: string, url: string) {
         this.setPlayingSong(name)
         this.setAudioVolume(this.volume)
-
+        this.setPaused(false)
         this.audio.src = url
         this.audio.load()
         this.audio.play()

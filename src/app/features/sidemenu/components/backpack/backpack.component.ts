@@ -19,7 +19,7 @@ export class BackpackComponent {
         {name: "Laptop", count: 1,  imageUrl:"/backpack/laptop.png"},
         {name: "Gold", count: 25,  imageUrl:"/backpack/coins.png"},
         {name: "Id", count: 1,  imageUrl:"/backpack/id.png"},
-        {name: "Book", count: 2,  imageUrl:"/backpack/notebook.png"},
+        {name: "Operative System Three Easy Pieces", count: 2,  imageUrl:"/backpack/notebook.png"},
         {name: "", count: 0, imageUrl:""},
         {name: "", count: 0, imageUrl:""},
         {name: "", count: 0, imageUrl:""},

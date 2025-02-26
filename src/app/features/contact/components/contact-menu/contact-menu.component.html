@@ -22,12 +22,10 @@
             <span class="absolute top-[.45rem] left-[1.6rem]">:</span>
         </div>
         <div class="w-24 h-10 absolute right-1 bottom-1 shadow border-2 bg-slate-800 border-slate-900 uppercase menu-font  center">
-            <ng-container [ngTemplateOutlet]="sending ? spinner : sendbutton"></ng-container>
+            <ng-container *ngIf="!ack" [ngTemplateOutlet]="sending ? spinner : sendbutton"></ng-container>
+            <ng-container *ngIf="ack" [ngTemplateOutlet]="success ? tick : cross"></ng-container>
         </div>
-        <!-- <div class="w-24 h-10 bg-slate-800 absolute right-1 bottom-1 shadow border-2 border-slate-900 uppercase menu-font center active:scale-95 cursor-pointer">
-            <ng-container [ngTemplateOutlet]="sending ? spinner : sendbutton"></ng-container>
-        </div> -->
-        <!-- <button   >send</button> -->
+
     </section>
 
 </section>
@@ -41,3 +39,12 @@
         SEND
     </div>
 </ng-template>
+
+<ng-template #tick>
+    <img src="/Sprites/tick.png"/>
+</ng-template>
+
+<ng-template #cross>
+    <img src="/Sprites/cross.png"/>
+</ng-template>
+

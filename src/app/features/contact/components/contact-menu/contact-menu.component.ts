@@ -17,7 +17,8 @@ export class ContactMenuComponent {
     sending: boolean = false
     subject: string = ""
     message: string = ""
-
+    success: boolean = false
+    ack: boolean = false
 
     constructor(public email_service: EmailService) {}
 
@@ -31,6 +32,23 @@ export class ContactMenuComponent {
         this.sending = false
     }
 
+    restartACK() {
+        this.ack = false
+        this.success = false
+    }
+
+    showACK(ok: boolean) {
+        
+        if (ok) {
+            this.success = true
+        } 
+        this.ack = true
+
+        setTimeout(() => {
+            this.ack = false
+        },2*1000)
+    }
+
     sendEmail() {
 
         let is_valid = this.validateFields(this.subject, this.message)
@@ -40,10 +58,19 @@ export class ContactMenuComponent {
 
         this.sending = true
         this.email_service.sendEmail(this.subject, this.message)
-        .pipe( tap(() => {this.sending = true}),  )
+        .pipe( 
+            tap(() => {this.sending = true}),  
+            
+        )
         .subscribe({
-            next: (response) => {this.restart()},
-            error: (err) => { console.log(err) }
+            next: (response) => {
+                this.restart()
+                this.showACK(true)
+            },
+            error: (err) => { 
+                this.showACK(false)
+                this.sending = false
+            }
         })
     }
 

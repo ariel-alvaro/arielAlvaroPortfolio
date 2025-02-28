@@ -6,7 +6,7 @@
             <div class=" p-[1px] h-[20%]  basis-[23%]">
                 <div class="h-full w-full shadow1 center p-0.5 rounded-sm relative glassy">
                     <div class="fullscreen shadow1 center">
-                        <img [Description]="item.name" *ngIf="item.imageUrl != ''" class="w-7 h-7 md:w-5 md:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 relative z-10" [src]="item.imageUrl"/> 
+                        <img [alt]="item.name" [Description]="item.name" *ngIf="item.imageUrl != ''" class="w-7 h-7 md:w-5 md:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 relative z-10" [src]="item.imageUrl"/> 
                     </div>
                     
                 </div>

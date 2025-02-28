@@ -2,8 +2,8 @@
 
     <div class=" w-full h-[10%] " >
         <div  class="h-full w-1/6 center " >
-            <img *ngIf="!music_service.paused" class="h-[70%]" src="/music/pause.png" (click)="music_service.pause()"/>
-            <img *ngIf="music_service.paused" class="h-[70%]" src="/music/play.png" (click)="music_service.resume()"/>
+            <img alt="pause" *ngIf="!music_service.paused" class="h-[70%]" src="/music/pause.png" (click)="music_service.pause()"/>
+            <img alt="play" *ngIf="music_service.paused" class="h-[70%]" src="/music/play.png" (click)="music_service.resume()"/>
         </div>
 
     </div>

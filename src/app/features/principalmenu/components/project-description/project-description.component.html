@@ -1,6 +1,6 @@
 <section class="fullscreen grid grid-cols-2 grid-rows-12 gap-0.5 py-5">
 
-    <img class="absolute top-1 md:w-7 md:h-7 cursor-pointer" src="/Sprites/arrow.png" (click)="notifyClose()"/>
+    <img alt="arrow" class="absolute top-1 md:w-7 md:h-7 cursor-pointer" src="/Sprites/arrow.png" (click)="notifyClose()"/>
 
     <section class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-full h-[95%] skeu row-span-11 row-start-1 p-[1px]">
 
@@ -24,13 +24,13 @@
     <section class=" row-start-1 row-span-7 center p-[1px]">
         <div class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-3/4 h-full skeu">
             <div class="fullscreen bg-[#0a1f29] relative center">
-                <img class="fullscreen" [src]="project.imageUrl"/>
+                <img alt="project image" class="fullscreen" [src]="project.imageUrl"/>
             </div>
     
             <div class="m-auto mt-2 md:w-2/3 relative rounded-sm h-[15%] bg-[url('/Sprites/bannerTexture.png')] bg-cover center overflow-hidden cursor-pointer">
                 <div class="fullscreen absolute bg-[#30c5f4] rounded-sm opacity-70 skeumor"></div>
                 <h3 class="relative z-10 menu-font text-xs ">GO TO PAGE</h3>
-                <a class="absolute z-20 fullscreen top-0" [href]="project.liveUrl" target="_blank"></a>
+                <a class="absolute z-20 fullscreen top-0" [href]="project.liveUrl" target="_blank" aria-label="visit the live project website"></a>
             </div>
         </div>
 
@@ -44,7 +44,7 @@
                 <div class="relative shadow1 w-4 h-4 md:w-8 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12">
                     <div class="fullscreen shadow1 bg-[#030c0f] opacity-80"></div>
                     <div class="fullscreen absolute top-0 phone:p-1 tablet:p-2">
-                        <img [Description]="tech.name" class="fullscreen" [src]="tech.imageUrl"/>
+                        <img [alt]="tech.name" [Description]="tech.name" class="fullscreen" [src]="tech.imageUrl"/>
                     </div>
                     
                 </div> 

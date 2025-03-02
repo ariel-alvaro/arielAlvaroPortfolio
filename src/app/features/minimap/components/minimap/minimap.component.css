@@ -26,8 +26,8 @@
 
 .steps-count {
     position: absolute;
-    bottom: 0px;
-    left:0;
+    bottom: 1px;
+    left:4px;
 
 }
 

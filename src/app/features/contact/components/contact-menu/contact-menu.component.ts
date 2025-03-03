@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Email } from '@features/contact/interfaces/contact.interfaces';
 import { EmailService } from '@features/contact/services/email.service';
 import { finalize, tap } from 'rxjs';
-import { enviroment } from 'src/enviroments/enviroment.development';
+
 
 @Component({
   selector: 'app-contact-menu',
@@ -74,7 +74,4 @@ export class ContactMenuComponent {
         })
     }
 
-    ngOnInit() {
-        console.log(enviroment.production)
-    }
 }

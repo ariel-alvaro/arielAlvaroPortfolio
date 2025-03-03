@@ -83,16 +83,9 @@ html {
 
 @font-face {
     font-family: 'rs';
-    src: url("/fonts/runescape.ttf");
-}
-@font-face {
-    font-family: 'rsIN';
-    src: url("/fonts/runescape_large.ttf");
-}
-
-@font-face {
-    font-family: 'rsCL';
-    src:  url('/fonts/RuneScape.woff2') format('woff2'), url('/fonts/RuneScape.woff') format('woff');
+    src: url("/fonts/runescape.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .textShadow {

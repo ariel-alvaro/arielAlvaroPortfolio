@@ -12,14 +12,6 @@ export const routes: Routes = [
     {path: "education", loadComponent: () => import("./features/principalmenu/components/education/education.component").then(m => m.EducationComponent)},
     {path: "resume", loadComponent: () => import("./features/principalmenu/components/resume/resume.component").then(m => m.ResumeComponent)},
     {path: "", redirectTo: '/home', pathMatch: "full"},
+    {path: "**", redirectTo: "/home", pathMatch: "full" }
+
 ];
-
-
-// export const routes: Routes = [
-//     {path: "home", component: HomeComponent},
-//     {path: "skills", component: SkillsComponent},
-//     {path: "projects", component: ProjectsComponent},
-//     {path: "education", component: EducationComponent},
-//     {path: "resume", component: ResumeComponent},
-//     {path: "", redirectTo: '/home', pathMatch: "full"},
-// ];

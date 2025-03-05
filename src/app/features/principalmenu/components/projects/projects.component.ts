@@ -27,8 +27,8 @@ export class ProjectsComponent {
             iconUrl: "/Sprites/law.png",
             liveUrl: "https://estudiojuridicoad.com",
             tecnologies: [ 
-                { name: "Python",imageUrl: "/Skills/python_icon.png" },
-                { name: "Django |Rest Framework",imageUrl: "/Skills/django.png" },
+                { name: "Python",imageUrl: "/Skills/python.png" },
+                { name: "Django",imageUrl: "/Skills/django.png" },
                 { name: "MySql",imageUrl: "/Skills/mysql.png" },
                 { name: "Typescript",imageUrl: "/Skills/typescript.png" },
                 { name: "Astro",imageUrl: "/Skills/astro.png" },

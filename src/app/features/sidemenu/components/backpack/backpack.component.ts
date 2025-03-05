@@ -14,12 +14,12 @@ export class BackpackComponent {
 
 
     items: BackpackItem[] = [
-        {name: "Coffee", count: 4, imageUrl:"/backpack/coffee.png"},
-        {name: "Pendrive", count: 1, imageUrl:"/backpack/pendrive.png"},
-        {name: "Laptop", count: 1,  imageUrl:"/backpack/laptop.png"},
-        {name: "Gold", count: 25,  imageUrl:"/backpack/coins.png"},
-        {name: "Id", count: 1,  imageUrl:"/backpack/id.png"},
-        {name: "Operative System Three Easy Pieces", count: 2,  imageUrl:"/backpack/notebook.png"},
+        {name: "Coffee", count: 4, imageUrl:"/backpack/coffee.webp"},
+        {name: "Pendrive", count: 1, imageUrl:"/backpack/pendrive.webp"},
+        {name: "Laptop", count: 1,  imageUrl:"/backpack/laptop.webp"},
+        {name: "Gold", count: 25,  imageUrl:"/backpack/coins.webp"},
+        {name: "Id", count: 1,  imageUrl:"/backpack/id.webp"},
+        {name: "Operative System Three Easy Pieces", count: 2,  imageUrl:"/backpack/notebook.webp"},
         {name: "", count: 0, imageUrl:""},
         {name: "", count: 0, imageUrl:""},
         {name: "", count: 0, imageUrl:""},

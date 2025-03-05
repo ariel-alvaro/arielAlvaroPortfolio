@@ -1,8 +1,8 @@
-<section class="fullscreen grid grid-cols-2 grid-rows-12 gap-0.5 py-5">
+<section class="fullscreen grid grid-cols-3 lg:grid-cols-4 grid-rows-12 gap-2 py-5 overflow-y-scroll">
 
     <img alt="arrow" class="absolute top-1 md:w-7 md:h-7 cursor-pointer" src="/Sprites/arrow.png" (click)="notifyClose()"/>
 
-    <section class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-full h-[95%] skeu row-span-11 row-start-1 p-[1px]">
+    <section class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-full h-[95%] skeu row-span-11 col-span-2 lg:col-span-3 row-start-1 p-[1px]">
 
         <div class="bg-[#0a1f29] fullscreen shadowS1 flex flex-col p-1 ">
             <h3 class="menu-font uppercase text-center yellowT text-xs lg:text-lg xl:text-3xl">{{project.name}}
@@ -22,7 +22,7 @@
     </section>
 
     <section class=" row-start-1 row-span-7 center p-[1px]">
-        <div class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-3/4 h-full skeu">
+        <div class="border-[.10em] border-[#2f3d45] bg-[#0a1f29a4] w-full h-full skeu">
             <div class="fullscreen bg-[#0a1f29] relative center">
                 <img alt="project image" class="fullscreen" [src]="project.imageUrl"/>
             </div>
@@ -36,18 +36,14 @@
 
     </section>
 
-    <section class="fullscreen col-span-2 row-span-3 flex flex-col relative mt-1">
+    <section class="fullscreen col-span-4 row-span-3 flex flex-col relative mt-3">
         
        
-        <div class="fullscreen flex gap-1">
+        <div class="fullscreen flex gap-1 flex-wrap">
             <ng-container *ngFor="let tech of project.tecnologies">
-                <div class="relative shadow1 w-4 h-4 md:w-8 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12">
-                    <div class="fullscreen shadow1 bg-[#030c0f] opacity-80"></div>
-                    <div class="fullscreen absolute top-0 phone:p-1 tablet:p-2">
-                        <img [alt]="tech.name" [Description]="tech.name" class="fullscreen" [src]="tech.imageUrl"/>
-                    </div>
-                    
-                </div> 
+                <div class="lg:h-7 yellowT text-xs lg:text-base bg-[#db302099] innerbox center  border-black p-1">
+                    {{tech.name}}
+                </div>
             </ng-container>
 
         </div>

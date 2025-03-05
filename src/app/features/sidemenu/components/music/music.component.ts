@@ -88,12 +88,12 @@ export class MusicComponent {
             url: "https://oldschool.runescape.wiki/images/transcoded/Newbie_Melody_%28v1%29.ogg/Newbie_Melody_%28v1%29.ogg.mp3"
         },
         {
-            id: 13,
+            id: 14,
             name: "Camelot",
             url: "https://oldschool.runescape.wiki/images/transcoded/Camelot_%28v1%29.ogg/Camelot_%28v1%29.ogg.mp3"
         },
         {
-            id: 13,
+            id: 15,
             name: "Greatness",
             url: "https://oldschool.runescape.wiki/images/transcoded/Greatness_%28v1%29.ogg/Greatness_%28v1%29.ogg.mp3"
         }

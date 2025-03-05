@@ -53,4 +53,9 @@
 
     <app-descriptor *ngIf="description_service.show"/>
 
+
 </main>
+
+<section *ngIf="!preload_service.loaded" class=" center h-screen w-screen bg-black absolute left-0 top-0 z-50">
+    <span class="text-white font-rs text-xl">loading - please wait.</span>
+</section>

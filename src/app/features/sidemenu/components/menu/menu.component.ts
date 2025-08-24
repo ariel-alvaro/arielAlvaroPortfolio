@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
 
 //Interfaces
 import { NavOption } from '@features/sidemenu/interfaces/sidemenu.interfaces';
-import { SkillsComponent } from "../skills/skills.component";
 import { SettingsComponent } from "../settings/settings.component";
 import { NavComponent } from "../nav/nav.component";
 import { MenuHeaderComponent } from "../menu-header/menu-header.component";
@@ -23,7 +22,7 @@ import { MusicComponent } from "../music/music.component";
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, SkillsComponent, SettingsComponent, NavComponent, MenuHeaderComponent, BackpackComponent, SummaryComponent, AboutComponent, AccountComponent, MusicComponent],
+  imports: [CommonModule, SettingsComponent, NavComponent, MenuHeaderComponent, BackpackComponent, SummaryComponent, AboutComponent, AccountComponent, MusicComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
@@ -37,13 +36,13 @@ export class MenuComponent {
     @ViewChild('settings') settings: TemplateRef<any>
 
     readonly navEnum = NavType;
-    
+
 
     upperOptions: NavOption[] = [
         {id: 0, description: "backpack", imageUrl:"Sprites/backpack.png", headerImageUrl: ""},
         {id: 1, description: "summary", imageUrl:"Sprites/summary.png", headerImageUrl: ""},
     ]
-    
+
     bottomOptions: NavOption[] = [
         {id: 2, description: "about", imageUrl:"Sprites/about.png", headerImageUrl: "", color:'#204439'},
         {id: 3, description: "contact", imageUrl:"Sprites/social.png", headerImageUrl: "", color:"#672330"},
@@ -52,7 +51,7 @@ export class MenuComponent {
     ]
 
     selection: NavOption = this.bottomOptions[0]
-    selectedTemplate: TemplateRef<any> | null = null 
+    selectedTemplate: TemplateRef<any> | null = null
 
     sections: TemplateRef<any>[] = [] // templates refs
 
@@ -65,7 +64,7 @@ export class MenuComponent {
         this.selectedTemplate = this.sections[option.id]
 
     }
-    
+
     ngAfterViewInit() {
         this.sections = [this.backpack, this.summary, this.about, this.account, this.music, this.settings];
         this.selectedTemplate = this.about

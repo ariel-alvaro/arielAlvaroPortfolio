@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Track } from '@features/sidemenu/interfaces/sidemenu.interfaces';
 import { MusicService } from '@features/sidemenu/services/music.service';
-import { audit, fromEvent } from 'rxjs';
+import { fromEvent } from 'rxjs';
 import { DescriptionDirective } from 'src/app/shared/directives/description/description.directive';
 
 @Component({
@@ -14,7 +14,7 @@ import { DescriptionDirective } from 'src/app/shared/directives/description/desc
 })
 export class MusicComponent {
 
-    playingTrackId: number 
+    playingTrackId: number
 
     tracks: Track[] = [
         {
@@ -97,9 +97,9 @@ export class MusicComponent {
             name: "Greatness",
             url: "https://oldschool.runescape.wiki/images/transcoded/Greatness_%28v1%29.ogg/Greatness_%28v1%29.ogg.mp3"
         }
-        
+
     ]
-    
+
     constructor(public music_service: MusicService) {}
 
     // Play a song with hash id number
